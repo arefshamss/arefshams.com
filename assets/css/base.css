@@ -1,0 +1,338 @@
+:root {
+  /* COLORS ======================================= */
+
+  --color-primary: #fdc448;
+  --color-primary-dark: #ca9c39;
+  --color-primary-accent: #b89039;
+  --color-primary-rgb: 253, 196, 72;
+  --color-secondary: #141414;
+  --color-secondary-dark: #090909;
+  --color-secondary-light: #171717;
+  --color-secondary-lighter: #1a1a1a;
+  --color-secondary-lighter-rgb: 26, 26, 26;
+  --color-secondary-rgb: 20, 20, 20;
+
+  --color-bg: #060606;
+  --color-bg-rgb: 6, 6, 6;
+
+  --color-text: #e5e5e5;
+  --color-text-muted: #9f9f9f;
+  --color-grey: #9c9c9c;
+  --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
+  --color-black: #000;
+  --color-black-rgb: 0, 0, 0;
+
+  --color-selection-bg: #353535;
+  --color-selection-text: #ffc335;
+
+  --color-border: #ffffff14;
+
+  --color-wordpress: #028cb0;
+  --color-js: #ffca28;
+  --color-css: #264de4;
+  --color-php: #8993be;
+  --color-dotnet: #512bd4;
+  --color-html: #e44d26;
+  --color-tailwind: #44a8b3;
+  --color-bootstrap: #563d7c;
+
+  /* UI ======================================= */
+  --pill-bg: rgba(255, 255, 255, 0.03);
+  --pill-border: rgba(255, 255, 255, 0.15);
+  --circle-border: rgba(255, 255, 255, 0.4);
+
+  /* LAYOUT ======================================= */
+
+  --header-height: 8rem;
+
+  /* RADIUS ======================================= */
+
+  --border-radius-main: 2rem;
+  --border-radius-max: 50rem;
+  --border-radius-circle: 50%;
+
+  /* TRANSITIONS ======================================= */
+
+  --transition-default: all 0.3s ease;
+  --transition-fast: all 0.2s ease;
+  --transition-normal: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+
+  /* FONT‌ SCALE ======================================= */
+
+  --fs-10: 1rem;
+  --fs-12: 1.2rem;
+  --fs-14: 1.4rem;
+  --fs-16: 1.6rem;
+  --fs-18: 1.8rem;
+  --fs-20: 2rem;
+  --fs-24: 2.4rem;
+  --fs-30: 3rem;
+  --fs-36: 3.6rem;
+  --fs-44: 4.4rem;
+  --fs-52: 5.2rem;
+  --fs-62: 6.2rem;
+  --fs-74: 7.4rem;
+  --fs-86: 8.6rem;
+  --fs-98: 9.8rem;
+
+  /* SPACING SYSTEM ======================================= */
+
+  --space-2: 0.2rem;
+  --space-4: 0.4rem;
+  --space-8: 0.8rem;
+  --space-12: 1.2rem;
+  --space-16: 1.6rem;
+  --space-24: 2.4rem;
+  --space-32: 3.2rem;
+  --space-48: 4.8rem;
+  --space-64: 6.4rem;
+  --space-80: 8rem;
+  --space-96: 9.6rem;
+  --space-128: 12.8rem;
+}
+
+/* RESET ======================================= */
+
+/* * {
+  outline: 1px solid red;
+} */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE ======================================= */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "VazirMatn", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* RTL HELPER ======================================= */
+
+.ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* IMAGES ======================================= */
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* LINKS ======================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LISTS ======================================= */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* FORMS ======================================= */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* FOCUS ======================================= */
+
+*:focus {
+  outline: none;
+}
+
+/* SELECTION ======================================= */
+
+::selection {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-text);
+}
+
+/* PREVENT SELECT ======================================= */
+
+header,
+footer,
+img,
+svg {
+  user-select: none;
+}
+
+/* TYPOGRAPHY ======================================= */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.heading-primary {
+  font-size: 6.5rem;
+}
+
+.heading-subtitle {
+  font-size: 3.5rem;
+  color: var(--color-primary);
+}
+
+.heading-secondary {
+  font-size: 4rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+body p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* 1368px / 85.5em ===================*/
+@media (max-width: 85.5em) {
+  .heading-primary {
+    font-size: 5.5rem;
+  }
+
+  .heading-subtitle {
+    font-size: 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.5rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3.2rem;
+  }
+}
+/* 1200px / 75em ===================*/
+@media (max-width: 75em) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+
+  .heading-subtitle {
+    font-size: 3rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.8rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  body p {
+    font-size: 1.5rem;
+  }
+}
+
+/* 1024px / 64em ===================*/
+@media (max-width: 64em) {
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+
+  .heading-subtitle {
+    font-size: 2.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+}
+
+/* 880px / 55em ===================*/
+@media (max-width: 55em) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .heading-subtitle {
+    font-size: 2.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+  }
+
+  body p {
+    font-size: 1.4rem;
+  }
+}
+
+/* 768px / 48em ===================*/
+@media (max-width: 48em) {
+  .heading-primary {
+    font-size: 3.3rem;
+  }
+
+  .heading-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem;
+    line-height: 2;
+  }
+  .heading-tertiary {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+/* 432px / 27em ===================*/
+@media (max-width: 27em) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
+}
