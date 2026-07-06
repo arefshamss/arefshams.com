@@ -704,11 +704,14 @@
 
             <form
               class="contact-form"
-              name="contact"
+              action="https://api.web3forms.com/submit"
               method="POST"
-              data-netlify="true"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input
+                type="hidden"
+                name="access_key"
+                value="dbbe5142-158b-437a-bec6-bdcaaa4f319d"
+              />
 
               <input
                 id="first-name"
@@ -747,7 +750,10 @@
                 rows="10"
                 required
               ></textarea>
-              <button class="btn btn--outline-primary btn--md btn--block">
+              <button
+                type="submit"
+                class="btn btn--outline-primary btn--md btn--block"
+              >
                 ارسال پیام
               </button>
             </form>
