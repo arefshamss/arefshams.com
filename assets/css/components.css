@@ -3,6 +3,7 @@
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  width: 100%;
 }
 
 .section-header {
@@ -328,7 +329,15 @@
 
 /* BREADCRUMB ======================================= */
 
-/* .breadcrumb li {
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb li {
   transition: all 0.4s ease-in-out;
 }
 
@@ -337,7 +346,49 @@
   color: var(--color-white);
   margin-right: 0.5rem;
   font-size: 2rem;
-} */
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  transition: all 0.2s ease-in-out;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.03);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.1);
+}
+
+.breadcrumb a.active {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.04);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.12);
+}
+
+/* 1200px / 75em ===================*/
+@media (max-width: 75em) {
+  .breadcrumb a:link,
+  .breadcrumb a:visited {
+    font-size: 1.5rem;
+  }
+}
+
+/* 880px / 55em ===================*/
+@media (max-width: 55em) {
+  .breadcrumb a:link,
+  .breadcrumb a:visited {
+    font-size: 1.4rem;
+  }
+}
 
 /* HELPER/SETTINGS CLASSES ======================================= */
 
