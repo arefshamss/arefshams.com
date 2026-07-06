@@ -992,6 +992,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.5rem;
   row-gap: 2rem;
+  position: relative;
 }
 
 .contact-form input,
@@ -1033,6 +1034,79 @@
   transform: scale(1.01);
 }
 
+.contact-form-content {
+  display: contents;
+}
+
+.contact-form-loader {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(var(--color-secondary-rgb), 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+  z-index: 20;
+  border-radius: var(--border-radius-main);
+}
+
+.contact-form-loader span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--color-white);
+}
+
+.contact-form.is-loading > *:not(.contact-form-loader) {
+  filter: blur(3px);
+  opacity: 0.6;
+  pointer-events: none;
+  user-select: none;
+  transition:
+    filter 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.contact-form.is-loading .contact-form-loader {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.form-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-result {
+  grid-column: 1 / -1;
+  min-height: 2.4rem;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 1.4rem 1.8rem;
+  border-radius: var(--border-radius-max);
+  text-align: center;
+}
+
+.form-result.is-success {
+  color: var(--color-success);
+  background-color: rgba(var(--color-success-rgb), 0.04);
+  border: solid 1px rgba(var(--color-success-rgb), 0.2);
+}
+
+.form-result.is-error {
+  color: var(--color-danger);
+  background-color: rgba(var(--color-danger-rgb), 0.04);
+  border: solid 1px rgba(var(--color-danger-rgb), 0.2);
+}
+
 /* 1368px / 85.5em ===================*/
 @media (max-width: 85.5em) {
   .contact-header h4 {
@@ -1053,6 +1127,8 @@
     font-size: 3.6rem;
   }
 
+  .contact-form-loader span,
+  .form-result,
   .contact-form input,
   .contact-form select,
   .contact-form textarea {
@@ -1108,10 +1184,6 @@
   .contact-social-links-label {
     font-size: 1.4rem;
   }
-
-  .btn--form {
-    font-size: 1.4rem;
-  }
 }
 
 /* 768px / 48em ===================*/
@@ -1128,6 +1200,8 @@
     gap: 1.5rem;
   }
 
+  .contact-form-loader span,
+  .form-result,
   .contact-form input,
   .contact-form select,
   .contact-form textarea {

@@ -701,61 +701,64 @@
           </div>
           <div class="contact-form-container">
             <span class="subheading">تماس با من</span>
+            <form class="contact-form" id="contact-form">
+              <div class="contact-form-content">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="dbbe5142-158b-437a-bec6-bdcaaa4f319d"
+                />
 
-            <form
-              class="contact-form"
-              action="https://api.web3forms.com/submit"
-              method="POST"
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="dbbe5142-158b-437a-bec6-bdcaaa4f319d"
-              />
+                <input
+                  id="first-name"
+                  type="text"
+                  placeholder="نام"
+                  name="first-name"
+                  required
+                />
+                <input
+                  id="last-name"
+                  type="text"
+                  placeholder="نام خانوادگی"
+                  name="last-name"
+                  required
+                />
 
-              <input
-                id="first-name"
-                type="text"
-                placeholder="نام"
-                name="first-name"
-                required
-              />
-              <input
-                id="last-name"
-                type="text"
-                placeholder="نام خانوادگی"
-                name="last-name"
-                required
-              />
+                <input
+                  id="phone-number"
+                  type="tel"
+                  placeholder="شماره تماس"
+                  name="phone-number"
+                  class="end-text"
+                  required
+                />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="ایمیل"
+                  name="email"
+                  required
+                />
+                <textarea
+                  id="message"
+                  placeholder="متن پیام"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn btn--outline-primary btn--md btn--block form-submit"
+                >
+                  ارسال پیام
+                </button>
 
-              <input
-                id="phone-number"
-                type="tel"
-                placeholder="شماره تماس"
-                name="phone-number"
-                class="end-text"
-                required
-              />
-              <input
-                id="email"
-                type="email"
-                placeholder="ایمیل"
-                name="email"
-                required
-              />
-              <textarea
-                id="message"
-                placeholder="متن پیام"
-                name="message"
-                rows="10"
-                required
-              ></textarea>
-              <button
-                type="submit"
-                class="btn btn--outline-primary btn--md btn--block"
-              >
-                ارسال پیام
-              </button>
+                <p id="form-result" class="form-result" aria-live="polite"></p>
+              </div>
+
+              <div class="contact-form-loader" aria-hidden="true">
+                <span>در حال ارسال...</span>
+              </div>
             </form>
           </div>
         </div>

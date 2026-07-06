@@ -29,6 +29,11 @@
 
   --color-border: #ffffff14;
 
+  --color-success: #22ce61;
+  --color-success-rgb: 34, 206, 97;
+  --color-danger: #d54444;
+  --color-danger-rgb: 213, 68, 68;
+
   --color-wordpress: #028cb0;
   --color-js: #ffca28;
   --color-css: #264de4;
