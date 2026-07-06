@@ -261,3 +261,113 @@
     font-size: 1.4rem;
   }
 }
+
+/* ============================================ */
+/* 404 ======================================= */
+/* ============================================ */
+
+.not-found-section {
+  background-color: var(--color-secondary);
+  height: 100vh;
+  padding: 4.8rem 0 9.6rem 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nout-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.not-found-logo {
+  max-width: 24rem;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.not-found-logo:hover {
+  opacity: 1;
+}
+
+.nout-found-container h1 {
+  font-size: 24rem;
+  line-height: 1;
+}
+.nout-found-container h2 {
+  font-size: 3.6rem;
+  line-height: 1;
+}
+
+/* 1368px / 85.5em =================== */
+@media (max-width: 85.5em) {
+  .not-found-logo {
+    max-width: 22rem;
+  }
+  .nout-found-container h1 {
+    font-size: 22rem;
+  }
+  .nout-found-container h2 {
+    font-size: 3.4rem;
+  }
+}
+/* 1200px / 75em ===================== */
+@media (max-width: 75em) {
+  .not-found-logo {
+    max-width: 20rem;
+  }
+  .nout-found-container h1 {
+    font-size: 20rem;
+  }
+  .nout-found-container h2 {
+    font-size: 3.2rem;
+  }
+}
+
+/* 1024px / 64em ===================== */
+@media (max-width: 64em) {
+  .not-found-logo {
+    max-width: 18rem;
+  }
+  .nout-found-container h1 {
+    font-size: 18rem;
+  }
+  .nout-found-container h2 {
+    font-size: 3rem;
+  }
+}
+
+/* 880px / 55em ====================== */
+@media (max-width: 55em) {
+  .nout-found-container {
+    gap: 6rem;
+  }
+  .not-found-logo {
+    max-width: 16rem;
+  }
+  .nout-found-container h1 {
+    font-size: 16rem;
+  }
+  .nout-found-container h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* 768px / 48em ====================== */
+@media (max-width: 48em) {
+  .nout-found-container {
+    gap: 4rem;
+  }
+  .not-found-logo {
+    max-width: 14rem;
+  }
+
+  .nout-found-container h1 {
+    font-size: 14rem;
+  }
+  .nout-found-container h2 {
+    font-size: 2.6rem;
+  }
+}
