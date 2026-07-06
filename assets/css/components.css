@@ -783,6 +783,7 @@ strong {
   border-radius: var(--border-radius-circle);
   border: solid 0.6px;
   transition: all 0.4s;
+  background-color: rgba(var(--color-primary-rgb), 0.03);
 }
 
 .social-icon:hover {

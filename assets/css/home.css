@@ -151,7 +151,7 @@
 /* 768px / 48em ===================*/
 @media (max-width: 48em) {
   .hero-section {
-    padding: 9.6rem 0;
+    padding: 8rem 0;
   }
 
   .hero {
@@ -189,11 +189,11 @@
 }
 
 /* ============================================ */
-/* ABOUT ======================================= */
+/* ABOUT ====================================== */
 /* ============================================ */
 
 .about-section {
-  padding: 4.8rem 0 3.2rem 0;
+  padding: 6.4rem 0 3.2rem 0;
 }
 
 .about-description {
@@ -256,7 +256,9 @@
   background-color: transparent;
   background-image: linear-gradient(
     150deg,
-    var(--color-secondary) 51%,
+    var(--color-secondary) 0%,
+    var(--color-secondary) 40%,
+    rgba(var(--color-primary-rgb), 0.15) 70%,
     rgba(var(--color-primary-rgb), 0.45) 100%
   );
   padding: 4.8rem;
@@ -339,7 +341,7 @@
 /* 1024px / 64em ===================*/
 @media (max-width: 64em) {
   .about-description {
-    padding: 3rem;
+    padding: 6.4rem 3rem;
   }
   .about-description::after,
   .about-description::before {
@@ -391,12 +393,7 @@
 /* 768px / 48em ===================*/
 @media (max-width: 48em) {
   .about-description {
-    padding: 1rem;
-  }
-
-  .about-description::after,
-  .about-description::before {
-    display: none;
+    padding: 6.4rem 1rem;
   }
 
   .about-cards {
@@ -423,19 +420,19 @@
 /* 680px / 42.5em ===================*/
 @media (max-width: 42.5em) {
   .about-description {
-    padding: 1rem;
+    padding: 4.8rem 1rem;
   }
 }
 
 /* 432px / 27em ===================*/
 @media (max-width: 27em) {
   .about-description {
-    padding: 1rem;
+    padding: 3.2rem 1rem;
   }
 }
 
 /* ============================================ */
-/* SKILL ======================================= */
+/* SKILL ====================================== */
 /* ============================================ */
 
 .skill-section {
@@ -497,6 +494,9 @@
 }
 /* 1200px / 75em ===================*/
 @media (max-width: 75em) {
+  .skill-section {
+    margin-top: 8rem;
+  }
   .skill-section .section-header {
     margin-bottom: 7rem;
   }
@@ -537,6 +537,9 @@
 
 /* 768px / 48em ===================*/
 @media (max-width: 48em) {
+  .skill-section {
+    margin-top: 7rem;
+  }
   .skill-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -653,6 +656,13 @@
 /* 880px / 55em ===================*/
 @media (max-width: 55em) {
   .service-section {
+    background-image:
+      linear-gradient(
+        to right bottom,
+        rgba(var(--color-secondary-rgb), 0.8),
+        rgba(var(--color-secondary-rgb), 0.8)
+      ),
+      url("../img/shapes/service-shape.png");
     padding: 8rem 0;
   }
 
@@ -690,6 +700,15 @@
 
 /* 680px / 42.5em ===================*/
 @media (max-width: 42.5em) {
+  .service-section {
+    background-image:
+      linear-gradient(
+        to right bottom,
+        rgba(var(--color-secondary-rgb), 0.9),
+        rgba(var(--color-secondary-rgb), 0.9)
+      ),
+      url("../img/shapes/service-shape.png");
+  }
   .service-card:hover {
     box-shadow: 0 0 0 5px rgba(var(--color-secondary-lighter-rgb), 0.6);
     transform: scale(1.009);
@@ -777,6 +796,9 @@
 
 /* 1200px / 75em ===================*/
 @media (max-width: 75em) {
+  .project-section {
+    margin-top: 8rem;
+  }
   .project-section .section-header {
     margin-bottom: 7rem;
   }
@@ -821,6 +843,10 @@
 
 /* 768px / 48em ===================*/
 @media (max-width: 48em) {
+  .project-section {
+    margin-top: 7rem;
+  }
+
   .project-cards {
     grid-template-columns: 1fr;
   }
@@ -831,7 +857,7 @@
 }
 
 /* ============================================ */
-/* RESUME ======================================= */
+/* RESUME ===================================== */
 /* ============================================ */
 
 .resume-section {
@@ -869,6 +895,10 @@
 
 /* 1200px / 75em ===================*/
 @media (max-width: 75em) {
+  .resume-section {
+    margin-top: 8rem;
+  }
+
   .resume-card h4 {
     font-size: 2.4rem;
   }
@@ -900,7 +930,7 @@
 }
 
 /* ============================================ */
-/* CONTACT ======================================= */
+/* CONTACT ==================================== */
 /* ============================================ */
 
 .contact-section {
@@ -936,7 +966,7 @@
 .contact-header {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .contact-header h4 {
@@ -1164,11 +1194,6 @@
     padding: 2rem 0 2rem 0;
   }
 
-  .contact-header {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
-
   .contact-header h3 {
     font-size: 3rem;
   }
@@ -1213,10 +1238,20 @@
 @media (max-width: 42.5em) {
   .contact-container {
     padding: 4rem 2rem;
+    background-image:
+      linear-gradient(
+        to right bottom,
+        rgba(var(--color-secondary-rgb), 0.8),
+        rgba(var(--color-secondary-rgb), 0.8)
+      ),
+      url("../img/shapes/contact-shape.png");
   }
   .contact-header {
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.6rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 0 0;
   }
 
   .contact-header h4 {
