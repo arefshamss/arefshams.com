@@ -24,7 +24,7 @@
       rgba(var(--color-secondary-rgb), 0.4),
       rgba(var(--color-secondary-rgb), 0.4)
     ),
-    url("/assets/img/shapes/service-shape.png");
+    url("../img/shapes/service-shape.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
