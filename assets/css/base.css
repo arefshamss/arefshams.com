@@ -1,5 +1,9 @@
+/* ============================================ */
+/* ROOT ======================================= */
+/* ============================================ */
+
 :root {
-  /* COLORS ======================================= */
+  /* COLORS =================================== */
 
   --color-primary: #fdc448;
   --color-primary-light: #ffd249;
@@ -48,24 +52,24 @@
   --pill-border: rgba(255, 255, 255, 0.15);
   --circle-border: rgba(255, 255, 255, 0.4);
 
-  /* LAYOUT ======================================= */
+  /* LAYOUT =================================== */
 
   --header-height: 8rem;
 
-  /* RADIUS ======================================= */
+  /* RADIUS =================================== */
 
   --border-radius-main: 2rem;
   --border-radius-max: 50rem;
   --border-radius-circle: 50%;
 
-  /* TRANSITIONS ======================================= */
+  /* TRANSITIONS ============================== */
 
   --transition-default: all 0.3s ease;
   --transition-fast: all 0.2s ease;
   --transition-normal: all 0.3s ease;
   --transition-slow: all 0.5s ease;
 
-  /* FONT‌ SCALE ======================================= */
+  /* FONT‌ SCALE =============================== */
 
   --fs-10: 1rem;
   --fs-12: 1.2rem;
@@ -83,7 +87,7 @@
   --fs-86: 8.6rem;
   --fs-98: 9.8rem;
 
-  /* SPACING SYSTEM ======================================= */
+  /* SPACING SYSTEM =========================== */
 
   --space-2: 0.2rem;
   --space-4: 0.4rem;
@@ -99,7 +103,9 @@
   --space-128: 12.8rem;
 }
 
-/* RESET ======================================= */
+/* ============================================ */
+/* RESET ====================================== */
+/* ============================================ */
 
 /* * {
   outline: 1px solid red;
@@ -137,14 +143,14 @@ body {
   overflow-x: hidden;
 }
 
-/* RTL HELPER ======================================= */
+/* RTL HELPER ================================= */
 
 .ltr {
   direction: ltr;
   unicode-bidi: isolate;
 }
 
-/* IMAGES ======================================= */
+/* IMAGES ===================================== */
 
 img,
 picture,
@@ -154,21 +160,21 @@ video {
   display: block;
 }
 
-/* LINKS ======================================= */
+/* LINKS ====================================== */
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* LISTS ======================================= */
+/* LISTS ====================================== */
 
 ul,
 ol {
   list-style: none;
 }
 
-/* FORMS ======================================= */
+/* FORMS ====================================== */
 
 input,
 button,
@@ -177,20 +183,20 @@ select {
   font: inherit;
 }
 
-/* FOCUS ======================================= */
+/* FOCUS ====================================== */
 
 *:focus {
   outline: none;
 }
 
-/* SELECTION ======================================= */
+/* SELECTION ================================== */
 
 ::selection {
   background: var(--color-selection-bg);
   color: var(--color-selection-text);
 }
 
-/* PREVENT SELECT ======================================= */
+/* PREVENT SELECT ============================= */
 
 header,
 footer,
@@ -199,7 +205,9 @@ svg {
   user-select: none;
 }
 
-/* TYPOGRAPHY ======================================= */
+/* ============================================ */
+/* TYPOGRAPHY ================================= */
+/* ============================================ */
 
 .heading-primary,
 .heading-secondary,
@@ -238,7 +246,7 @@ body p {
   line-height: 2;
 }
 
-/* 1368px / 85.5em ===================*/
+/* 1368px / 85.5em =================== */
 @media (max-width: 85.5em) {
   .heading-primary {
     font-size: 5.5rem;
@@ -256,7 +264,7 @@ body p {
     font-size: 3.2rem;
   }
 }
-/* 1200px / 75em ===================*/
+/* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .heading-primary {
     font-size: 5rem;
@@ -283,7 +291,7 @@ body p {
   }
 }
 
-/* 1024px / 64em ===================*/
+/* 1024px / 64em ===================== */
 @media (max-width: 64em) {
   .heading-primary {
     font-size: 4.5rem;
@@ -298,7 +306,7 @@ body p {
   }
 }
 
-/* 880px / 55em ===================*/
+/* 880px / 55em ====================== */
 @media (max-width: 55em) {
   .heading-primary {
     font-size: 4rem;
@@ -324,7 +332,7 @@ body p {
   }
 }
 
-/* 768px / 48em ===================*/
+/* 768px / 48em ==================== */
 @media (max-width: 48em) {
   .heading-primary {
     font-size: 3.3rem;
@@ -344,7 +352,7 @@ body p {
   }
 }
 
-/* 432px / 27em ===================*/
+/* 432px / 27em ====================== */
 @media (max-width: 27em) {
   .heading-secondary {
     font-size: 2rem;

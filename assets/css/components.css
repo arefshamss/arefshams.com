@@ -1,4 +1,6 @@
-/* GENERAL REUSABLE COMPONENTS ======================================= */
+/* ============================================ */
+/* GENERAL ==================================== */
+/* ============================================ */
 
 .container {
   max-width: 120rem;
@@ -12,21 +14,21 @@
   row-gap: 2rem;
 }
 
-/* 1368px / 85.5em ===================*/
+/* 1368px / 85.5em =================== */
 @media (max-width: 85.5em) {
   .container {
     max-width: 85%;
   }
 }
 
-/* 1200px / 75em ===================*/
+/* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .container {
     max-width: 90%;
   }
 }
 
-/* 880px / 55em ===================*/
+/* 880px / 55em ====================== */
 @media (max-width: 55em) {
   .container {
     max-width: 95%;
@@ -34,7 +36,7 @@
 }
 
 /* ============================================ */
-/* DIVIDER ======================================= */
+/* DIVIDER ==================================== */
 /* ============================================ */
 
 .divider {
@@ -62,35 +64,35 @@
   flex-grow: 1;
 }
 
-/* 1200px / 75em ===================*/
+/* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .divider h2 {
     font-size: 2.4rem;
   }
 }
 
-/* 1024px / 64em ===================*/
+/* 1024px / 64em ===================== */
 @media (max-width: 64em) {
   .main-tag-container .divider span {
     font-size: 1.5rem;
   }
 }
 
-/* 880px / 55em ===================*/
+/* 880px / 55em ====================== */
 @media (max-width: 55em) {
   .divider h2 {
     font-size: 2.2rem;
   }
 }
 
-/* 768px / 48em ===================*/
+/* 768px / 48em ====================== */
 @media (max-width: 48em) {
   .divider h2 {
     font-size: 2rem;
   }
 }
 
-/* 680px / 42.5em ===================*/
+/* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
   .main-tag-container .divider span {
     font-size: 1.4rem;
@@ -112,7 +114,7 @@
   transform: scale(1.01);
 }
 
-/* 680px / 42.5em ===================*/
+/* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
   .card:hover {
     box-shadow: 0 0 0 5px rgba(var(--color-secondary-rgb), 0.6);
@@ -144,7 +146,7 @@
 .btn:hover,
 .btn:active {
   border-color: var(--color-primary);
-  transform: scale(1.01);
+  transform: scale(1.02);
   box-shadow: 0 0 0 5px rgba(var(--color-primary-rgb), 0.2);
 }
 
@@ -238,7 +240,9 @@
   }
 }
 
+/* ============================================ */
 /* LINK ======================================= */
+/* ============================================ */
 
 .link:link,
 .link:visited {
@@ -330,7 +334,9 @@
   }
 }
 
-/* BREADCRUMB ======================================= */
+/* ============================================ */
+/* BREADCRUMB ================================= */
+/* ============================================ */
 
 .breadcrumb ul {
   list-style: none;
@@ -377,7 +383,7 @@
   border: 1px solid rgba(var(--color-primary-rgb), 0.12);
 }
 
-/* 1200px / 75em ===================*/
+/* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .breadcrumb a:link,
   .breadcrumb a:visited {
@@ -385,7 +391,7 @@
   }
 }
 
-/* 880px / 55em ===================*/
+/* 880px / 55em ====================== */
 @media (max-width: 55em) {
   .breadcrumb a:link,
   .breadcrumb a:visited {
@@ -393,7 +399,9 @@
   }
 }
 
-/* HELPER/SETTINGS CLASSES ======================================= */
+/* ============================================ */
+/* HELPER CLASSES ============================= */
+/* ============================================ */
 
 .center-text {
   text-align: center;
@@ -525,7 +533,7 @@ strong {
   color: var(--color-text);
 }
 
-/* 1024px / 64em ===================*/
+/* 1024px / 64em ===================== */
 @media (max-width: 64em) {
   .tag-item span {
     font-size: 1.3rem;
@@ -540,7 +548,7 @@ strong {
   }
 }
 
-/* 680px / 42.5em ===================*/
+/* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
   .tag-item span {
     font-size: 1.2rem;
@@ -556,7 +564,7 @@ strong {
 }
 
 /* ============================================ */
-/* SOCIAL PILL ======================================= */
+/* SOCIAL PILL ================================ */
 /* ============================================ */
 
 .social-pill-container {
@@ -638,7 +646,7 @@ strong {
   color: rgba(var(--color-white-rgb), 0.9);
 }
 
-/* 1368px / 85.5em ===================*/
+/* 1368px / 85.5em =================== */
 @media (max-width: 85.5em) {
   .social-pill-md {
     padding: 0.5rem 0.5rem 0.5rem 1.9rem;
@@ -670,7 +678,7 @@ strong {
     font-size: 1.5rem;
   }
 }
-/* 1200px / 75em ===================*/
+/* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .social-pill-container {
     gap: 1.5rem;
@@ -705,7 +713,7 @@ strong {
   }
 }
 
-/* 1024px / 64em ===================*/
+/* 1024px / 64em ===================== */
 @media (max-width: 64em) {
   .social-pill-container {
     display: flex;
@@ -726,7 +734,7 @@ strong {
   }
 }
 
-/* 680px / 42.5em ===================*/
+/* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
   .social-pill-container {
     gap: 1rem;
@@ -751,7 +759,7 @@ strong {
   }
 }
 
-/* 432px / 27em ===================*/
+/* 432px / 27em ====================== */
 @media (max-width: 27em) {
   .social-pill-md .icon-circle {
     width: 3rem;
@@ -767,7 +775,7 @@ strong {
 }
 
 /* ============================================ */
-/* SOCIAL LINK ======================================= */
+/* SOCIAL LINK ================================ */
 /* ============================================ */
 
 .social-links {

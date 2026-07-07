@@ -1,5 +1,5 @@
 /* ============================================ */
-/* ALL PROJECTS ======================================= */
+/* ALL PROJECTS =============================== */
 /* ============================================ */
 
 .all-projects .divider {
@@ -36,7 +36,7 @@
   justify-content: center;
 }
 
-/* 768px / 48em ===================*/
+/* 768px / 48em ====================== */
 @media (max-width: 48em) {
   .project-header {
     padding: 3rem 0;
@@ -50,7 +50,7 @@
 }
 
 /* ============================================ */
-/* PROJECT DETAILS ============================*/
+/* PROJECT DETAILS ============================ */
 /* ============================================ */
 
 .project-details-section {
@@ -189,8 +189,7 @@
   border-right: 0.6rem solid var(--color-primary);
 }
 
-/* Code */
-
+/* PRISM CODE ================================= */
 .code-accordion pre,
 .code-accordion code {
   direction: ltr !important;
@@ -289,7 +288,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   color: var(--color-primary);
 }
 
-/* 1200px / 75em ===================*/
+/* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .project-details-card h2 {
     font-size: 2.2rem;
@@ -316,7 +315,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 }
 
-/* 880px / 55em ===================*/
+/* 880px / 55em ====================== */
 @media (max-width: 55em) {
   .project-details-main-card,
   .project-details-card {
@@ -347,7 +346,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 }
 
-/* 768px / 48em ===================*/
+/* 768px / 48em ====================== */
 @media (max-width: 48em) {
   .project-details-main-card,
   .project-details-card {
@@ -355,7 +354,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 }
 
-/* 680px / 42.5em ===================*/
+/* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
   .project-details-header {
     flex-direction: column;

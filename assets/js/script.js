@@ -202,9 +202,8 @@ if (btnNav && header) {
   });
 }
 
-/* =========================================
-   Elementor-like Animation Observer
-========================================= */
+///////////////////////////////////////////////////////////
+// Animations
 
 const animationElements = document.querySelectorAll(".animation");
 
@@ -268,9 +267,8 @@ if (animationElements.length) {
   });
 }
 
-/* =========================================
-   Counter Animation
-========================================= */
+///////////////////////////////////////////////////////////
+// Counter Animations
 
 const counterElements = document.querySelectorAll(".counter");
 

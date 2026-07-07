@@ -111,52 +111,58 @@
             <div class="social-links social-links--hero">
               <a
                 href="https://github.com/arefshamss"
+                class="animation zoom-in delay-100"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="گیت‌هاب عارف شمس‌پور"
                 ><iconify-icon
-                  class="social-icon social-icon--hero animation zoom-in delay-100"
-                  icon="line-md:github"
+                  class="social-icon social-icon--hero"
+                  icon="akar-icons:github-fill"
                 ></iconify-icon
               ></a>
               <a
                 href="https://www.linkedin.com/in/arefshamspour"
+                class="animation zoom-in delay-300"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="لینکدین عارف شمس‌پور"
                 ><iconify-icon
-                  class="social-icon social-icon--hero animation zoom-in delay-300"
-                  icon="line-md:linkedin"
+                  class="social-icon social-icon--hero"
+                  icon="akar-icons:linkedin-fill"
                 ></iconify-icon
               ></a>
               <a
                 href="https://t.me/arefshamss"
+                class="animation zoom-in delay-500"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="تلگرام عارف شمس‌پور"
                 ><iconify-icon
-                  class="social-icon social-icon--hero animation zoom-in delay-500"
-                  icon="line-md:telegram"
+                  class="social-icon social-icon--hero"
+                  icon="icon-park-outline:telegram"
                 ></iconify-icon
               ></a>
               <a
                 href="mailto:sh.aref@ymail.com"
+                class="animation zoom-in delay-700"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="ایمیل عارف شمس‌پور"
                 ><iconify-icon
-                  class="social-icon social-icon--hero animation zoom-in delay-700"
-                  icon="line-md:email"
+                  class="social-icon social-icon--hero"
+                  icon="fa6-solid:envelope"
                 ></iconify-icon
               ></a>
             </div>
           </div>
           <div class="hero-img-container">
-            <img
-              src="./assets/img/user/user-img.webp"
-              class="hero-img animation fade-in"
-              alt="تصویر پروفایل عارف شمس‌پور - برنامه‌نویس وب"
-            />
+            <div class="hero-img animation fade-in">
+              <img
+                src="./assets/img/user/user-img.webp"
+                alt="تصویر پروفایل عارف شمس‌پور - برنامه‌نویس وب"
+              />
+            </div>
+
             <img
               src="./assets/img/shapes/rotating-ring.png"
               class="rotating-ring"
@@ -188,39 +194,39 @@
             </h2>
           </div>
           <div class="about-cards">
-            <div
-              class="card about-card about-main-card animation fade-in-right"
-            >
-              <h3 class="fa-num counter">1,000+</h3>
-              <h4>ساعت کدنویسی</h4>
-              <p>
-                بیش از عدد و زمان؛ هر خط کدی که می‌نویسم با دقت، یادگیری مداوم و
-                عشق به تکنولوژی شکل می‌گیرد.
-              </p>
+            <div class="about-main-card animation fade-in-right">
+              <div class="card about-card about-main-card-inner">
+                <h3 class="fa-num counter">1,000+</h3>
+                <h4>ساعت کدنویسی</h4>
+                <p>
+                  بیش از عدد و زمان؛ هر خط کدی که می‌نویسم با دقت، یادگیری مداوم
+                  و عشق به تکنولوژی شکل می‌گیرد.
+                </p>
+              </div>
             </div>
-            <div
-              class="card about-card about-secondary-card animation zoom-in delay-0"
-            >
-              <h4 class="fa-num counter">5+</h4>
-              <span> پروژه عملیاتی </span>
+            <div class="about-secondary-card animation zoom-in delay-0">
+              <div class="card about-card about-secondary-card-inner">
+                <h4 class="fa-num counter">5+</h4>
+                <span> پروژه عملیاتی </span>
+              </div>
             </div>
-            <div
-              class="card about-card about-secondary-card animation zoom-in delay-100"
-            >
-              <h4 class="fa-num counter">14+</h4>
-              <span class="card-subtitle"> فناوری و ابزار</span>
+            <div class="about-secondary-card animation zoom-in delay-100">
+              <div class="card about-card about-secondary-card-inner">
+                <h4 class="fa-num counter">14+</h4>
+                <span class="card-subtitle"> فناوری و ابزار</span>
+              </div>
             </div>
-            <div
-              class="card about-card about-secondary-card animation zoom-in delay-200"
-            >
-              <h4 class="fa-num counter">250+</h4>
-              <span> فنجان قهوه</span>
+            <div class="about-secondary-card animation zoom-in delay-200">
+              <div class="card about-card about-secondary-card-inner">
+                <h4 class="fa-num counter">250+</h4>
+                <span> فنجان قهوه</span>
+              </div>
             </div>
-            <div
-              class="card about-card about-secondary-card animation zoom-in delay-300"
-            >
-              <h4 class="fa-num counter">30+</h4>
-              <span> پیاده‌سازی عملی</span>
+            <div class="about-secondary-card animation zoom-in delay-300">
+              <div class="card about-card about-secondary-card-inner">
+                <h4 class="fa-num counter">30+</h4>
+                <span> پیاده‌سازی عملی</span>
+              </div>
             </div>
           </div>
         </div>
@@ -307,39 +313,45 @@
           </div>
           <div class="service-cards">
             <div class="service-card animation fade-in-up delay-0">
-              <iconify-icon
-                class="service-icon"
-                icon="streamline-plump:web"
-              ></iconify-icon>
+              <div class="service-card-inner">
+                <iconify-icon
+                  class="service-icon"
+                  icon="streamline-plump:web"
+                ></iconify-icon>
 
-              <h3>توسعه وب</h3>
-              <p class="center-text">
-                طراحی و پیاده‌سازی وب‌سایت‌های پایدار و مقیاس‌پذیر با تمرکز بر
-                معماری تمیز، عملکرد بهینه و نگهداری آسان.
-              </p>
+                <h3>توسعه وب</h3>
+                <p class="center-text">
+                  طراحی و پیاده‌سازی وب‌سایت‌های پایدار و مقیاس‌پذیر با تمرکز بر
+                  معماری تمیز، عملکرد بهینه و نگهداری آسان.
+                </p>
+              </div>
             </div>
             <div class="service-card animation fade-in-up delay-150">
-              <iconify-icon
-                class="service-icon"
-                icon="ic:baseline-wordpress"
-              ></iconify-icon>
-              <h3>توسعه وردپرس</h3>
-              <p class="center-text">
-                طراحی و توسعه وب‌سایت‌های وردپرسی متناسب با نیاز کسب‌وکارها، با
-                تمرکز بر انعطاف‌پذیری، سرعت و قابلیت توسعه.
-              </p>
+              <div class="service-card-inner">
+                <iconify-icon
+                  class="service-icon"
+                  icon="ic:baseline-wordpress"
+                ></iconify-icon>
+                <h3>توسعه وردپرس</h3>
+                <p class="center-text">
+                  طراحی و توسعه وب‌سایت‌های وردپرسی متناسب با نیاز کسب‌وکارها،
+                  با تمرکز بر انعطاف‌پذیری، سرعت و قابلیت توسعه.
+                </p>
+              </div>
             </div>
             <div class="service-card animation fade-in-up delay-300">
-              <iconify-icon
-                class="service-icon"
-                icon="solar:ruler-cross-pen-linear"
-              ></iconify-icon>
+              <div class="service-card-inner">
+                <iconify-icon
+                  class="service-icon"
+                  icon="solar:ruler-cross-pen-linear"
+                ></iconify-icon>
 
-              <h3>توسعه فرانت‌اند</h3>
-              <p class="center-text">
-                پیاده‌سازی رابط‌های کاربری واکنش‌گرا و کاربرپسند با استفاده از
-                HTML، CSS و JavaScript، با تمرکز بر تجربه کاربری.
-              </p>
+                <h3>توسعه فرانت‌اند</h3>
+                <p class="center-text">
+                  پیاده‌سازی رابط‌های کاربری واکنش‌گرا و کاربرپسند با استفاده از
+                  HTML، CSS و JavaScript، با تمرکز بر تجربه کاربری.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -354,124 +366,130 @@
               نمونه‌هایی از پروژه‌های توسعه وب اجراشده
             </h2>
           </div>
-          <div class="project-cards anim-clip">
-            <div class="card project-card animation fade-in delay-0">
-              <div class="project-img">
-                <img
-                  src="./assets/img/projects/cft-sazeh/cft-sazeh.webp"
-                  alt="طراحی و توسعه وب‌سایت CFT Sazeh با WordPress"
-                />
-              </div>
-              <div class="project-info">
-                <h3>سی‌اف‌تی سازه</h3>
-                <div class="project-more-info">
-                  <iconify-icon
-                    class="project-icon"
-                    icon="selfhst:wordpress"
-                  ></iconify-icon>
-
-                  <a
-                    href="./projects/cft-sazeh.html"
-                    class="btn btn--outline-muted btn--sm"
-                  >
-                    مشاهده جزئیات
+          <div class="project-cards">
+            <div class="project-card animation fade-in delay-0">
+              <div class="card project-card-inner">
+                <div class="project-img">
+                  <img
+                    src="./assets/img/projects/cft-sazeh/cft-sazeh.webp"
+                    alt="طراحی و توسعه وب‌سایت CFT Sazeh با WordPress"
+                  />
+                </div>
+                <div class="project-info">
+                  <h3>سی‌اف‌تی سازه</h3>
+                  <div class="project-more-info">
                     <iconify-icon
-                      class="icon"
-                      icon="line-md:arrow-left"
+                      class="project-icon"
+                      icon="selfhst:wordpress"
                     ></iconify-icon>
-                  </a>
+
+                    <a
+                      href="./projects/cft-sazeh.html"
+                      class="btn btn--outline-muted btn--sm"
+                    >
+                      مشاهده جزئیات
+                      <iconify-icon
+                        class="icon"
+                        icon="line-md:arrow-left"
+                      ></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card project-card animation fade-in delay-100">
-              <div class="project-img">
-                <img
-                  src="./assets/img/projects/launch-your-brands/launch-your-brands.webp"
-                  alt="طراحی و توسعه وب‌سایت Launch Your Brands با WordPress"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Launch Your Brands</h3>
-                <div class="project-more-info">
-                  <iconify-icon
-                    class="project-icon"
-                    icon="selfhst:wordpress"
-                  ></iconify-icon>
-
-                  <a
-                    href="./projects/launch-your-brands.html"
-                    class="btn btn--outline-muted btn--sm"
-                  >
-                    مشاهده جزئیات
+            <div class="project-card animation fade-in delay-100">
+              <div class="card project-card-inner">
+                <div class="project-img">
+                  <img
+                    src="./assets/img/projects/launch-your-brands/launch-your-brands.webp"
+                    alt="طراحی و توسعه وب‌سایت Launch Your Brands با WordPress"
+                  />
+                </div>
+                <div class="project-info">
+                  <h3>Launch Your Brands</h3>
+                  <div class="project-more-info">
                     <iconify-icon
-                      class="icon"
-                      icon="line-md:arrow-left"
+                      class="project-icon"
+                      icon="selfhst:wordpress"
                     ></iconify-icon>
-                  </a>
+
+                    <a
+                      href="./projects/launch-your-brands.html"
+                      class="btn btn--outline-muted btn--sm"
+                    >
+                      مشاهده جزئیات
+                      <iconify-icon
+                        class="icon"
+                        icon="line-md:arrow-left"
+                      ></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card project-card animation fade-in delay-200">
-              <div class="project-img">
-                <img
-                  src="./assets/img/projects/barname-nevisan/barname-nevisan.webp"
-                  alt="طراحی و توسعه وب‌سایت برنامه‌نویسان با ASP.NET Core"
-                />
-              </div>
-              <div class="project-info">
-                <h3>برنامه‌نویسان پیشرو رسام</h3>
-                <div class="project-more-info">
-                  <iconify-icon
-                    class="project-icon"
-                    icon="selfhst:asp-net-core"
-                  ></iconify-icon>
-
-                  <a
-                    href="./projects/barname-nevisan.html"
-                    class="btn btn--outline-muted btn--sm"
-                  >
-                    مشاهده جزئیات
+            <div class="project-card animation fade-in delay-200">
+              <div class="card project-card-inner">
+                <div class="project-img">
+                  <img
+                    src="./assets/img/projects/barname-nevisan/barname-nevisan.webp"
+                    alt="طراحی و توسعه وب‌سایت برنامه‌نویسان با ASP.NET Core"
+                  />
+                </div>
+                <div class="project-info">
+                  <h3>برنامه‌نویسان پیشرو رسام</h3>
+                  <div class="project-more-info">
                     <iconify-icon
-                      class="icon"
-                      icon="line-md:arrow-left"
+                      class="project-icon"
+                      icon="selfhst:asp-net-core"
                     ></iconify-icon>
-                  </a>
+
+                    <a
+                      href="./projects/barname-nevisan.html"
+                      class="btn btn--outline-muted btn--sm"
+                    >
+                      مشاهده جزئیات
+                      <iconify-icon
+                        class="icon"
+                        icon="line-md:arrow-left"
+                      ></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card project-card animation fade-in delay-300">
-              <div class="project-img">
-                <img
-                  src="./assets/img/projects/resume/resume.webp"
-                  alt="طراحی و توسعه وب‌سایت رزومه شخصی با ASP.NET Core"
-                />
-              </div>
+            <div class="project-card animation fade-in delay-300">
+              <div class="card project-card-inner">
+                <div class="project-img">
+                  <img
+                    src="./assets/img/projects/resume/resume.webp"
+                    alt="طراحی و توسعه وب‌سایت رزومه شخصی با ASP.NET Core"
+                  />
+                </div>
 
-              <div class="project-info">
-                <h3>رزومه شخصی</h3>
-                <div class="project-more-info">
-                  <iconify-icon
-                    class="project-icon"
-                    icon="selfhst:asp-net-core"
-                  ></iconify-icon>
-
-                  <a
-                    href="./projects/resume.html"
-                    class="btn btn--outline-muted btn--sm"
-                    >مشاهده جزئیات
+                <div class="project-info">
+                  <h3>رزومه شخصی</h3>
+                  <div class="project-more-info">
                     <iconify-icon
-                      class="icon"
-                      icon="line-md:arrow-left"
+                      class="project-icon"
+                      icon="selfhst:asp-net-core"
                     ></iconify-icon>
-                  </a>
+
+                    <a
+                      href="./projects/resume.html"
+                      class="btn btn--outline-muted btn--sm"
+                      >مشاهده جزئیات
+                      <iconify-icon
+                        class="icon"
+                        icon="line-md:arrow-left"
+                      ></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="center-text see-more-projects">
-            <a
-              href="./projects.html"
-              class="btn btn--outline-primary btn--lg animation fade-in"
+          <div class="center-text see-more-projects animation fade-in">
+            <a href="./projects.html" class="btn btn--outline-primary btn--lg"
               >مشاهده تمام پروژه‌ها</a
             >
           </div>
@@ -492,101 +510,109 @@
             <div class="divider-line"></div>
           </div>
           <div class="resume-cards">
-            <div class="card resume-card animation fade-in-up delay-0">
-              <h4>کارشناسی زبان انگلیسی</h4>
-              <ul class="list">
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:calendar"
-                  ></iconify-icon>
-                  <span class="fa-num"> مهر 1397 – خرداد 1401 </span>
-                </li>
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:map-marker-alt"
-                  ></iconify-icon>
-                  <a
-                    href="https://qods.iau.ir/fa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><span> دانشگاه آزاد واحد شهرقدس </span></a
-                  >
-                </li>
-              </ul>
+            <div class="resume-card animation fade-in-up delay-0">
+              <div class="card resume-card-inner">
+                <h4>کارشناسی زبان انگلیسی</h4>
+                <ul class="list">
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:calendar"
+                    ></iconify-icon>
+                    <span class="fa-num"> مهر 1397 – خرداد 1401 </span>
+                  </li>
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:map-marker-alt"
+                    ></iconify-icon>
+                    <a
+                      href="https://qods.iau.ir/fa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span> دانشگاه آزاد واحد شهرقدس </span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card resume-card animation fade-in-up delay-100">
-              <h4>بوت‌کمپ #C</h4>
-              <ul class="list">
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:calendar"
-                  ></iconify-icon>
-                  <span class="fa-num">خرداد 1403 - مرداد 1403</span>
-                </li>
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:map-marker-alt"
-                  ></iconify-icon>
-                  <a
-                    href="https://barnamenevisan.info/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><span>آکادمی برنامه‌نویسان</span></a
-                  >
-                </li>
-              </ul>
+            <div class="resume-card animation fade-in-up delay-100">
+              <div class="card resume-card-inner">
+                <h4>بوت‌کمپ #C</h4>
+                <ul class="list">
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:calendar"
+                    ></iconify-icon>
+                    <span class="fa-num">خرداد 1403 - مرداد 1403</span>
+                  </li>
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:map-marker-alt"
+                    ></iconify-icon>
+                    <a
+                      href="https://barnamenevisan.info/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span>آکادمی برنامه‌نویسان</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card resume-card animation fade-in-up delay-200">
-              <h4>بوت‌کمپ ASP.NET Core</h4>
-              <ul class="list">
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:calendar"
-                  ></iconify-icon>
-                  <span class="fa-num"> مهر 1403 - آبان 1403</span>
-                </li>
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:map-marker-alt"
-                  ></iconify-icon>
-                  <a
-                    href="https://barnamenevisan.info/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><span>آکادمی برنامه‌نویسان</span></a
-                  >
-                </li>
-              </ul>
+            <div class="resume-card animation fade-in-up delay-200">
+              <div class="card resume-card-inner">
+                <h4>بوت‌کمپ ASP.NET Core</h4>
+                <ul class="list">
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:calendar"
+                    ></iconify-icon>
+                    <span class="fa-num"> مهر 1403 - آبان 1403</span>
+                  </li>
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:map-marker-alt"
+                    ></iconify-icon>
+                    <a
+                      href="https://barnamenevisan.info/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span>آکادمی برنامه‌نویسان</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card resume-card animation fade-in-up delay-300">
-              <h4>کارآموزی ASP.NET Core</h4>
-              <ul class="list">
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:calendar"
-                  ></iconify-icon>
-                  <span class="fa-num">آبان 1403 - دی 1403</span>
-                </li>
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:map-marker-alt"
-                  ></iconify-icon>
-                  <a
-                    href="https://barnamenevisan.info/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><span>آکادمی برنامه‌نویسان</span></a
-                  >
-                </li>
-              </ul>
+            <div class="resume-card animation fade-in-up delay-300">
+              <div class="card resume-card-inner">
+                <h4>کارآموزی ASP.NET Core</h4>
+                <ul class="list">
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:calendar"
+                    ></iconify-icon>
+                    <span class="fa-num">آبان 1403 - دی 1403</span>
+                  </li>
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:map-marker-alt"
+                    ></iconify-icon>
+                    <a
+                      href="https://barnamenevisan.info/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span>آکادمی برنامه‌نویسان</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="divider">
@@ -594,51 +620,55 @@
             <div class="divider-line"></div>
           </div>
           <div class="resume-cards">
-            <div class="card resume-card animation fade-in-up delay-0">
-              <h4>توسعه‌دهنده ASP.NET Core</h4>
-              <ul class="list">
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:calendar"
-                  ></iconify-icon>
-                  <span class="fa-num">دی 1403 – مرداد 1404</span>
-                </li>
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:map-marker-alt"
-                  ></iconify-icon>
-                  <a
-                    href="https://barnamenevisan.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>گروه برنامه‌نویسان پیشرو رسام</span></a
-                  >
-                </li>
-              </ul>
+            <div class="resume-card animation fade-in-up delay-0">
+              <div class="card resume-card-inner">
+                <h4>توسعه‌دهنده ASP.NET Core</h4>
+                <ul class="list">
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:calendar"
+                    ></iconify-icon>
+                    <span class="fa-num">دی 1403 – مرداد 1404</span>
+                  </li>
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:map-marker-alt"
+                    ></iconify-icon>
+                    <a
+                      href="https://barnamenevisan.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>گروه برنامه‌نویسان پیشرو رسام</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card resume-card animation fade-in-up delay-100">
-              <h4>توسعه‌دهنده فریلنس</h4>
-              <ul class="list">
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:calendar"
-                  ></iconify-icon>
-                  <span class="fa-num">مرداد 1404 – اکنون</span>
-                </li>
-                <li class="list-item">
-                  <iconify-icon
-                    class="icon"
-                    icon="line-md:chat-round"
-                  ></iconify-icon>
-                  <span>
-                    توسعه مستقل وب با تکنولوژی‌های متناسب با هر پروژه
-                  </span>
-                </li>
-              </ul>
+            <div class="resume-card animation fade-in-up delay-100">
+              <div class="card resume-card-inner">
+                <h4>توسعه‌دهنده فریلنس</h4>
+                <ul class="list">
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:calendar"
+                    ></iconify-icon>
+                    <span class="fa-num">مرداد 1404 – اکنون</span>
+                  </li>
+                  <li class="list-item">
+                    <iconify-icon
+                      class="icon"
+                      icon="line-md:chat-round"
+                    ></iconify-icon>
+                    <span>
+                      توسعه مستقل وب با تکنولوژی‌های متناسب با هر پروژه
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -666,7 +696,7 @@
                   class="social-pill social-pill-lg"
                 >
                   <div class="icon-circle">
-                    <iconify-icon icon="line-md:email"></iconify-icon>
+                    <iconify-icon icon="fa6-solid:envelope"></iconify-icon>
                   </div>
                   <span>sh.aref@ymail.com</span>
                 </a>
@@ -685,7 +715,9 @@
                     class="social-pill social-pill-md"
                   >
                     <div class="icon-circle">
-                      <iconify-icon icon="line-md:telegram"></iconify-icon>
+                      <iconify-icon
+                        icon="icon-park-outline:telegram"
+                      ></iconify-icon>
                     </div>
                     <span>تلگرام</span>
                   </a>
@@ -697,7 +729,9 @@
                     class="social-pill social-pill-md"
                   >
                     <div class="icon-circle">
-                      <iconify-icon icon="line-md:github"></iconify-icon>
+                      <iconify-icon
+                        icon="akar-icons:github-fill"
+                      ></iconify-icon>
                     </div>
                     <span>گیت‌هاب</span>
                   </a>
@@ -709,7 +743,9 @@
                     class="social-pill social-pill-md"
                   >
                     <div class="icon-circle">
-                      <iconify-icon icon="line-md:linkedin"></iconify-icon>
+                      <iconify-icon
+                        icon="akar-icons:linkedin-fill"
+                      ></iconify-icon>
                     </div>
                     <span>لینکدین</span>
                   </a>
@@ -799,7 +835,7 @@
             aria-label="گیت‌هاب عارف شمس‌پور"
             ><iconify-icon
               class="social-icon social-icon--footer"
-              icon="line-md:github"
+              icon="akar-icons:github-fill"
             ></iconify-icon
           ></a>
           <a
@@ -809,7 +845,7 @@
             aria-label="لینکدین عارف شمس‌پور"
             ><iconify-icon
               class="social-icon social-icon--footer"
-              icon="line-md:linkedin"
+              icon="akar-icons:linkedin-fill"
             ></iconify-icon
           ></a>
           <a
@@ -819,7 +855,7 @@
             aria-label="تلگرام عارف شمس‌پور"
             ><iconify-icon
               class="social-icon social-icon--footer"
-              icon="line-md:telegram"
+              icon="icon-park-outline:telegram"
             ></iconify-icon
           ></a>
           <a
@@ -829,7 +865,7 @@
             aria-label="ایمیل عارف شمس‌پور"
             ><iconify-icon
               class="social-icon social-icon--footer"
-              icon="line-md:email"
+              icon="fa6-solid:envelope"
             ></iconify-icon
           ></a>
         </div>
