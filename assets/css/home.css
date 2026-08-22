@@ -472,7 +472,7 @@
 
 .skill-cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }
@@ -538,6 +538,9 @@
 
 /* 1024px / 64em ===================== */
 @media (max-width: 64em) {
+  .skill-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .skill-card img {
     max-width: 7rem;
   }
@@ -545,6 +548,10 @@
 
 /* 880px / 55em ====================== */
 @media (max-width: 55em) {
+  .skill-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .skill-section {
     padding: 2rem 0 2rem 0;
   }
@@ -563,11 +570,30 @@
 
 /* 768px / 48em ====================== */
 @media (max-width: 48em) {
+  .skill-cards {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.8rem;
+    row-gap: 1.8rem;
+  }
   .skill-section {
     margin-top: 7rem;
   }
+}
+
+/* 680px / 42.5em ==================== */
+@media (max-width: 42.5em) {
+  .skill-cards {
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+  }
+}
+
+/* 480px / 30em ====================== */
+@media (max-width: 30em) {
   .skill-cards {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.4rem;
+    row-gap: 1.4rem;
   }
 }
 

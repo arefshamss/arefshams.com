@@ -214,6 +214,26 @@
   color: var(--color-secondary);
 }
 
+.btn--disabled,
+.btn--disabled:link,
+.btn--disabled:visited {
+  background-color: transparent;
+  color: var(--color-grey);
+  border-color: var(--color-grey);
+  opacity: 0.5;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.btn--disabled:hover,
+.btn--disabled:active {
+  background-color: transparent;
+  color: var(--color-grey);
+  border-color: var(--color-grey);
+  transform: none;
+  box-shadow: none;
+}
+
 /* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .btn--sm {
@@ -799,4 +819,44 @@ strong {
   fill: var(--color-primary);
   color: var(--color-primary);
   transform: scale(1.09);
+}
+
+/* ============================================ */
+/* TOOLTIP ==================================== */
+/* ============================================ */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 50%;
+  translate: -50% 0;
+
+  width: max-content;
+  max-width: min(30rem, calc(100vw - 3rem));
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--border-radius-main);
+  background-color: var(--color-text);
+  color: var(--color-secondary);
+
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    translate 0.2s ease;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  translate: -50% -0.4rem;
 }

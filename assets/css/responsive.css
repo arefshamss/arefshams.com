@@ -25,6 +25,10 @@
 @media (max-width: 42.5em) {
 }
 
+/* 480px / 30em ====================== */
+@media (max-width: 30em) {
+}
+
 /* 432px / 27em ====================== */
 @media (max-width: 27em) {
 }
