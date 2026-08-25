@@ -1246,16 +1246,21 @@
   }
 }
 
+/* 930px / 58em ====================== */
+@media (max-width: 58em) {
+  .contact-header h3,
+  .contact-header h4 {
+    font-size: 3.2rem;
+  }
+}
+
 /* 880px / 55em ====================== */
 @media (max-width: 55em) {
   .contact-section {
     padding: 2rem 0 2rem 0;
   }
 
-  .contact-header h3 {
-    font-size: 3rem;
-  }
-
+  .contact-header h3,
   .contact-header h4 {
     font-size: 3rem;
   }
@@ -1289,6 +1294,14 @@
   .contact-form select,
   .contact-form textarea {
     font-size: 1.4rem;
+  }
+}
+
+/* 768px / 48em ====================== */
+@media (max-width: 48em) {
+  .contact-header h3,
+  .contact-header h4 {
+    font-size: 2.8rem;
   }
 }
 
