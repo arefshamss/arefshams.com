@@ -30,7 +30,7 @@
   row-gap: 3rem;
 }
 
-.hero-text-container p {
+.hero-description {
   font-size: 1.6rem;
 }
 
@@ -121,7 +121,7 @@
 
 /* 1200px / 75em ===================== */
 @media (max-width: 75em) {
-  .hero-text-container p {
+  .hero-description {
     font-size: 1.5rem;
   }
 
@@ -141,7 +141,7 @@
 
 /* 1024px / 64em ===================== */
 @media (max-width: 64em) {
-  .hero-text-container p {
+  .hero-description {
     font-size: 1.4rem;
   }
 
@@ -181,7 +181,7 @@
     order: 2;
   }
 
-  .hero-text-container p {
+  .hero-description {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -1085,12 +1085,6 @@
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  transition: all 0.5s ease;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
   width: 100%;
   font-size: 1.6rem;
   color: inherit;
@@ -1099,20 +1093,54 @@
   border-radius: var(--border-radius-main);
   box-shadow: 0 1px 2px rgba(var(--color-black-rgb), 0.1);
   padding: 1rem;
+  transition: all 0.5s ease;
+}
+
+.contact-form textarea {
+  width: 100%;
+  min-height: 10rem;
+  max-height: 50rem;
+  line-height: 2;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  line-height: 2;
+  resize: none;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+.contact-form textarea::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.contact-form textarea::-webkit-scrollbar-thumb {
+  background: #333;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+
+.contact-form textarea::-webkit-scrollbar-track {
+  margin-block: 1.2rem;
+  background: transparent;
+}
+
+.contact-form textarea::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.contact-form textarea::-webkit-resizer {
+  background: transparent;
 }
 
 .contact-form textarea,
 .contact-form button {
   grid-column: 1 / -1;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  width: 100%;
-  min-height: 10rem;
-  max-height: 50rem;
-
-  box-sizing: border-box;
 }
 
 .contact-form *:focus {

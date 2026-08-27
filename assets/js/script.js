@@ -460,3 +460,71 @@ form.addEventListener("submit", async function (e) {
     submitButton.disabled = false;
   }
 });
+
+///////////////////////////////////////////////////////////
+// Typing Effect
+
+document.addEventListener("DOMContentLoaded", () => {
+  const typingElements = document.querySelectorAll(".typing");
+
+  typingElements.forEach((container) => {
+    const typingSpeed = Number(container.dataset.speed) || 20;
+    const startDelay = Number(container.dataset.delay) || 500;
+
+    const fullHeight = container.getBoundingClientRect().height;
+
+    container.style.minHeight = `${fullHeight}px`;
+
+    const textNodes = [];
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+
+    let currentNode;
+
+    while ((currentNode = walker.nextNode())) {
+      if (currentNode.nodeValue.trim().length > 0) {
+        textNodes.push({
+          node: currentNode,
+          text: currentNode.nodeValue,
+        });
+      }
+    }
+
+    textNodes.forEach((item) => {
+      item.node.nodeValue = "";
+    });
+
+    let currentNodeIndex = 0;
+    let currentCharIndex = 0;
+
+    function typeWriter() {
+      if (currentNodeIndex >= textNodes.length) {
+        return;
+      }
+
+      const currentTextNode = textNodes[currentNodeIndex];
+      const currentText = currentTextNode.text;
+
+      if (currentCharIndex < currentText.length) {
+        const char = currentText.charAt(currentCharIndex);
+
+        currentTextNode.node.nodeValue += char;
+        currentCharIndex++;
+
+        let delay = char.trim() === "" ? 0 : typingSpeed;
+
+        if ([".", "،", "؛", "؟", "!"].includes(char)) {
+          delay = typingSpeed * 4;
+        }
+
+        setTimeout(typeWriter, delay);
+      } else {
+        currentNodeIndex++;
+        currentCharIndex = 0;
+
+        typeWriter();
+      }
+    }
+
+    setTimeout(typeWriter, startDelay);
+  });
+});
