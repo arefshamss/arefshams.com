@@ -1149,6 +1149,39 @@
   transform: scale(1.01);
 }
 
+/* AUTOFILL =================================== */
+
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--color-text);
+  caret-color: var(--color-text);
+
+  border-color: var(--color-border);
+
+  -webkit-box-shadow: 0 0 0 1000px var(--color-secondary) inset;
+  box-shadow: 0 0 0 1000px var(--color-secondary) inset;
+
+  transition: background-color 9999s ease-out 0s;
+}
+
+.contact-form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-text);
+  caret-color: var(--color-text);
+
+  border-color: var(--color-border);
+  outline: none;
+  transform: scale(1.01);
+
+  -webkit-box-shadow:
+    0 0 0 6px rgba(var(--color-secondary-lighter-rgb), 0.7),
+    0 0 0 1000px var(--color-secondary) inset;
+
+  box-shadow:
+    0 0 0 6px rgba(var(--color-secondary-lighter-rgb), 0.7),
+    0 0 0 1000px var(--color-secondary) inset;
+}
+
 .contact-form-content {
   display: contents;
 }
