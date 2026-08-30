@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url("../img/shapes/hero-shape.png");
+  background-image: url("../img/shapes/hero-shape.webp");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -610,7 +610,7 @@
       rgba(var(--color-secondary-rgb), 0.6),
       rgba(var(--color-secondary-rgb), 0.6)
     ),
-    url("../img/shapes/service-shape.png");
+    url("../img/shapes/service-shape.webp");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -717,7 +717,7 @@
         rgba(var(--color-secondary-rgb), 0.8),
         rgba(var(--color-secondary-rgb), 0.8)
       ),
-      url("../img/shapes/service-shape.png");
+      url("../img/shapes/service-shape.webp");
     padding: 8rem 0;
   }
 
@@ -762,7 +762,7 @@
         rgba(var(--color-secondary-rgb), 0.9),
         rgba(var(--color-secondary-rgb), 0.9)
       ),
-      url("../img/shapes/service-shape.png");
+      url("../img/shapes/service-shape.webp");
   }
   .service-card-inner:hover {
     box-shadow: 0 0 0 5px rgba(var(--color-secondary-lighter-rgb), 0.6);
@@ -1008,7 +1008,7 @@
       rgba(var(--color-secondary-rgb), 0.6),
       rgba(var(--color-secondary-rgb), 0.6)
     ),
-    url("../img/shapes/contact-shape.png");
+    url("../img/shapes/contact-shape.webp");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1374,7 +1374,7 @@
         rgba(var(--color-secondary-rgb), 0.8),
         rgba(var(--color-secondary-rgb), 0.8)
       ),
-      url("../img/shapes/contact-shape.png");
+      url("../img/shapes/contact-shape.webp");
   }
   .contact-header {
     flex-direction: column;
