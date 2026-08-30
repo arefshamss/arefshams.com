@@ -46,6 +46,20 @@
 
     <link rel="icon" href="./assets/img/logo/favicon.png" />
 
+    <link
+      rel="preload"
+      href="./assets/fonts/Vazirmatn-Variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/img/user-img.webp"
+      as="image"
+      fetchpriority="high"
+    />
+
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
@@ -84,7 +98,7 @@
             <li><a class="main-nav-link" href="#contact"> تماس با من </a></li>
           </ul>
         </nav>
-        <button class="btn-mobile-nav">
+        <button class="btn-mobile-nav" aria-label="منوی سایت">
           <iconify-icon
             class="icon-mobile-nav"
             icon="gg:menu-right"
@@ -404,7 +418,7 @@
               <div class="card project-card-inner">
                 <div class="project-img">
                   <img
-                    src="./assets/img/projects/cft-sazeh/cft-sazeh.webp"
+                    src="./assets/img/projects/cft-sazeh/cft-sazeh-thumb.webp"
                     alt="طراحی و توسعه وب‌سایت CFT Sazeh با WordPress"
                   />
                 </div>
@@ -434,7 +448,7 @@
               <div class="card project-card-inner">
                 <div class="project-img">
                   <img
-                    src="./assets/img/projects/launch-your-brands/launch-your-brands.webp"
+                    src="./assets/img/projects/launch-your-brands/launch-your-brands-thumb.webp"
                     alt="طراحی و توسعه وب‌سایت Launch Your Brands با WordPress"
                   />
                 </div>
@@ -464,7 +478,7 @@
               <div class="card project-card-inner">
                 <div class="project-img">
                   <img
-                    src="./assets/img/projects/barname-nevisan/barname-nevisan.webp"
+                    src="./assets/img/projects/barname-nevisan/barname-nevisan-thumb.webp"
                     alt="طراحی و توسعه وب‌سایت برنامه‌نویسان با ASP.NET Core"
                   />
                 </div>
@@ -494,7 +508,7 @@
               <div class="card project-card-inner">
                 <div class="project-img">
                   <img
-                    src="./assets/img/projects/resume/resume.webp"
+                    src="./assets/img/projects/resume/resume-thumb.webp"
                     alt="طراحی و توسعه وب‌سایت رزومه شخصی با ASP.NET Core"
                   />
                 </div>
