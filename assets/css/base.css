@@ -241,6 +241,10 @@ svg {
   text-transform: uppercase;
 }
 
+.muted-text {
+  color: var(--color-text-muted);
+}
+
 body p {
   font-size: 1.6rem;
   line-height: 2;

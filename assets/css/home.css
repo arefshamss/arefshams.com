@@ -96,7 +96,6 @@
   width: 115%;
   max-width: none;
   transform: translate(-50%, -50%);
-  transform-origin: center center;
   animation: rotateRing 90s linear infinite;
   z-index: 1;
   pointer-events: none;
@@ -955,6 +954,21 @@
   margin-bottom: 2.4rem;
 }
 
+.resume-download {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.resume-download p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+
 /* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .resume-section {
@@ -974,6 +988,10 @@
   .resume-card h4 {
     font-size: 2.2rem;
   }
+  .resume-download {
+    margin-top: 5rem;
+    gap: 1.4rem;
+  }
 }
 
 /* 768px / 48em ====================== */
@@ -988,6 +1006,14 @@
 
   .resume-card h4 {
     font-size: 2rem;
+  }
+
+  .resume-download {
+    gap: 1.2rem;
+  }
+
+  .resume-download p {
+    font-size: 1.3rem;
   }
 }
 
