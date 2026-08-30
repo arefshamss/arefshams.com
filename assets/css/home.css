@@ -101,6 +101,11 @@
   z-index: 1;
   pointer-events: none;
   transition: all 0.5s;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
 /* 1368px / 85.5em =================== */
@@ -159,7 +164,7 @@
   }
 
   .rotating-ring {
-    width: 100%;
+    width: 95%;
   }
 }
 
