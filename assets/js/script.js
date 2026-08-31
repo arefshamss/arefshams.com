@@ -528,20 +528,17 @@ if (form && result) {
 
 ///////////////////////////////////////////////////////////
 // Scroll to Top
-const home = document.getElementById("home");
+
 const scrollToTop = document.getElementById("scrollToTop");
 
-if (home && scrollToTop) {
-  const scrollToTopObserver = new IntersectionObserver(
-    ([entry]) => {
-      scrollToTop.classList.toggle("show", !entry.isIntersecting);
-    },
-    {
-      threshold: 0.1,
-    },
-  );
+if (scrollToTop) {
+  const toggleScrollToTop = () => {
+    scrollToTop.classList.toggle("show", window.scrollY > 300);
+  };
 
-  scrollToTopObserver.observe(home);
+  toggleScrollToTop();
+
+  window.addEventListener("scroll", toggleScrollToTop, { passive: true });
 
   scrollToTop.addEventListener("click", () => {
     lenis.scrollTo(0);
