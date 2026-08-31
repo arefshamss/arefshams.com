@@ -15,6 +15,25 @@ document.querySelectorAll(".fa-num").forEach((el) => {
 });
 
 ///////////////////////////////////////////////////////////
+// Lenis
+const lenis = new Lenis({
+  lerp: 0.1,
+  duration: 1.4,
+  wheelMultiplier: 1,
+  gestureOrientation: "vertical",
+  normalizeWheel: true,
+  smoothWheel: true,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -34,14 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (!target) return false;
 
-    const top =
-      target.getBoundingClientRect().top +
-      window.pageYOffset -
-      getHeaderHeight();
-
-    window.scrollTo({
-      top,
-      behavior: smooth ? "smooth" : "auto",
+    lenis.scrollTo(target, {
+      offset: -getHeaderHeight(),
     });
 
     return true;
@@ -110,25 +123,6 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
-
-///////////////////////////////////////////////////////////
-// Lenis
-const lenis = new Lenis({
-  lerp: 0.1,
-  duration: 1.4,
-  wheelMultiplier: 1,
-  gestureOrientation: "vertical",
-  normalizeWheel: true,
-  smoothWheel: true,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-});
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
 
 ///////////////////////////////////////////////////////////
 // Accordion
