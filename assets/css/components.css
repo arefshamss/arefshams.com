@@ -500,6 +500,13 @@ strong {
   color: var(--color-wordpress);
 }
 
+.icon.elementor {
+  color: var(--color-elementor);
+}
+.icon.woocommerce {
+  color: var(--color-woocommerce);
+}
+
 .icon.javaScript {
   color: var(--color-js);
 }
