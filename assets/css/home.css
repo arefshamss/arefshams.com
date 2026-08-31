@@ -6,7 +6,7 @@
   background-color: var(--color-secondary);
   padding: 4.8rem 0 9.6rem 0;
   margin-top: var(--header-height);
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -32,18 +32,6 @@
 
 .hero-description {
   font-size: 1.6rem;
-}
-
-.social-links--hero {
-  justify-content: start;
-  gap: 2rem;
-}
-.social-icon--hero {
-  font-size: 2.4rem;
-  padding: 1rem;
-  fill: var(--color-primary-accent);
-  color: var(--color-primary-accent);
-  border-color: var(--color-primary-accent);
 }
 
 .hero-img-container {
@@ -114,10 +102,6 @@
 
 /* 1368px / 85.5em =================== */
 @media (max-width: 85.5em) {
-  .social-icon {
-    font-size: 2.2rem;
-  }
-
   .hero-img {
     width: 90%;
     height: 90%;
@@ -134,10 +118,6 @@
     font-size: 1.5rem;
   }
 
-  .social-icon--hero {
-    font-size: 2rem;
-  }
-
   .hero-img {
     width: 85%;
     height: 85%;
@@ -152,14 +132,6 @@
 @media (max-width: 64em) {
   .hero-description {
     font-size: 1.4rem;
-  }
-
-  .social-links--hero {
-    gap: 1.5rem;
-  }
-
-  .social-icon--hero {
-    font-size: 1.9rem;
   }
 
   .hero-img {
@@ -197,10 +169,6 @@
 
   .hero-img-container {
     order: 1;
-  }
-
-  .social-icon--hero {
-    font-size: 1.8rem;
   }
 
   .hero-img {
