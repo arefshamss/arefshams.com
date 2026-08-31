@@ -531,3 +531,25 @@ if (form && result) {
     }
   });
 }
+
+///////////////////////////////////////////////////////////
+// Scroll to Top
+const home = document.getElementById("home");
+const scrollToTop = document.getElementById("scrollToTop");
+
+if (home && scrollToTop) {
+  const scrollToTopObserver = new IntersectionObserver(
+    ([entry]) => {
+      scrollToTop.classList.toggle("show", !entry.isIntersecting);
+    },
+    {
+      threshold: 0.1,
+    },
+  );
+
+  scrollToTopObserver.observe(home);
+
+  scrollToTop.addEventListener("click", () => {
+    lenis.scrollTo(0);
+  });
+}
