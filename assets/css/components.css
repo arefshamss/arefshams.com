@@ -296,7 +296,7 @@
 @media (max-width: 42.5em) {
   .btn--sm {
     font-size: 1.2rem;
-    padding: 0.9rem 1.8rem;
+    padding: 1rem 1.8rem;
   }
 
   .btn--md {
@@ -545,7 +545,6 @@ strong {
   background-color: var(--pill-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-max);
-  transition: all 0.3s ease;
   color: var(--color-white);
   padding: 0 0 0 2rem;
   gap: 1.2rem;
@@ -553,7 +552,6 @@ strong {
 }
 
 .tag-icon {
-  background-color: transparent;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-circle);
   background-color: var(--color-border);
@@ -571,7 +569,7 @@ strong {
   font-size: 3.6rem;
 }
 
-.icon.wordPress {
+.icon.wordpress {
   color: var(--color-wordpress);
 }
 
@@ -582,7 +580,7 @@ strong {
   color: var(--color-woocommerce);
 }
 
-.icon.javaScript {
+.icon.javascript {
   color: var(--color-js);
 }
 
@@ -616,6 +614,10 @@ strong {
   color: var(--color-text-muted);
   font-size: 1.4rem;
   transform: translateY(1px);
+}
+
+.tag-item.flag span {
+  transform: translateY(0);
 }
 
 .tag-item:hover {

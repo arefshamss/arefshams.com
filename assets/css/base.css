@@ -49,6 +49,11 @@
   --color-tailwind: #44a8b3;
   --color-bootstrap: #563d7c;
 
+  /* HEADING GRADIENT LEVELS ================== */
+  --color-heading-h2: #f5cf7a;
+  --color-heading-h3: #fae4b5;
+  --color-heading-h4: #f4ebd9;
+
   /* UI ======================================= */
   --pill-bg: rgba(255, 255, 255, 0.03);
   --pill-border: rgba(255, 255, 255, 0.15);
@@ -396,11 +401,11 @@ body p {
   }
 
   .heading-subtitle {
-    font-size: 1.8rem;
+    font-size: 1.7برrem;
   }
 
   .heading-secondary {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 
   .heading-tertiary {
@@ -408,7 +413,7 @@ body p {
   }
 
   body p {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 }
 

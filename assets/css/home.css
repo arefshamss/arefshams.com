@@ -171,7 +171,6 @@
   }
 
   .hero-description {
-    font-size: 1.4rem;
     text-align: center;
   }
 
@@ -192,14 +191,14 @@
 /* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
   .hero-description {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 }
 
 /* 480px / 30em ====================== */
 @media (max-width: 30em) {
   .hero-description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 

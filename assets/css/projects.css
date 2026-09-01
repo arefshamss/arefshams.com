@@ -36,8 +36,20 @@
   justify-content: center;
 }
 
+/* 880px / 55em ====================== */
+@media (max-width: 55em) {
+  .all-projects .divider {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
 /* 768px / 48em ====================== */
 @media (max-width: 48em) {
+  .all-projects .divider {
+    margin-top: 5rem;
+  }
+
   .project-header {
     padding: 3rem 0;
     row-gap: 2rem;
@@ -46,6 +58,13 @@
 
   .project-header .container {
     padding: 0 1rem;
+  }
+}
+
+/* 432px / 27em ====================== */
+@media (max-width: 27em) {
+  .all-projects .divider {
+    margin-top: 4rem;
   }
 }
 
@@ -64,7 +83,7 @@
   width: 100%;
   padding: 3rem 0;
   margin-top: var(--header-height);
-  background-image: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 .main-tag-container {
@@ -131,10 +150,6 @@
   flex-wrap: wrap;
 }
 
-.project-details-header .btn--outline {
-  padding: 1.2rem 2.4rem;
-}
-
 .project-details-main-card h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -145,21 +160,21 @@
 .project-details-card h2 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: var(--color-text);
+  color: var(--color-heading-h2);
   line-height: 1.5;
 }
 
 .project-details-card h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-heading-h3);
   line-height: 1.5;
 }
 
 .project-details-card h4 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--color-heading-h4);
   line-height: 1.5;
 }
 
@@ -307,11 +322,11 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 
   .project-details-card h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .project-details-card h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .accordion-header span {
@@ -347,11 +362,11 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 
   .project-details-card h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .project-details-card h4 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .accordion-header span {
@@ -428,15 +443,15 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 
   .project-details-card h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   .project-details-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .project-details-card h4 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
   }
 
   .accordion-header span {
