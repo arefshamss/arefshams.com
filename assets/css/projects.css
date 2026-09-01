@@ -53,6 +53,10 @@
 /* PROJECT DETAILS ============================ */
 /* ============================================ */
 
+.project-page .breadcrumb {
+  margin: 0 1rem;
+}
+
 .project-details-section {
   display: flex;
   flex-direction: column;
@@ -66,7 +70,7 @@
 .main-tag-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.6rem;
 }
 
 .main-tag-container .divider span {
@@ -93,6 +97,7 @@
   border: solid 1px var(--color-border);
   padding: 4rem;
 }
+
 .project-details-main-card {
   row-gap: 4rem;
 }
@@ -101,6 +106,7 @@
   row-gap: 3rem;
   transition: all 0.6s;
 }
+
 .project-details-content {
   display: flex;
   flex-direction: column;
@@ -129,32 +135,32 @@
   padding: 1.2rem 2.4rem;
 }
 
+.project-details-main-card h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
 .project-details-card h2 {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .project-details-card h3 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--color-text);
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .project-details-card h4 {
   font-size: 1.7rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-text);
-  line-height: 2;
-}
-
-.project-details-card p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--color-text);
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .project-details-list {
@@ -171,9 +177,7 @@
 .project-details-list li p {
   position: relative;
   padding-right: 2rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--color-white);
+  margin-bottom: 1rem;
 }
 
 .project-details-list li p::before {
@@ -290,6 +294,14 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
 /* 1200px / 75em ===================== */
 @media (max-width: 75em) {
+  .project-details-card {
+    row-gap: 2.8rem;
+  }
+
+  .project-details-main-card h1 {
+    font-size: 2.8rem;
+  }
+
   .project-details-card h2 {
     font-size: 2.2rem;
   }
@@ -300,10 +312,6 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
   .project-details-card h4 {
     font-size: 1.6rem;
-  }
-
-  .project-details-card p {
-    font-size: 1.5rem;
   }
 
   .accordion-header span {
@@ -317,10 +325,23 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
 /* 880px / 55em ====================== */
 @media (max-width: 55em) {
+  .project-details-card {
+    row-gap: 2.6rem;
+  }
+
   .project-details-main-card,
   .project-details-card {
     padding: 3rem;
   }
+
+  .main-tag-container .divider span {
+    font-size: 1.5rem;
+  }
+
+  .project-details-main-card h1 {
+    font-size: 2.6rem;
+  }
+
   .project-details-card h2 {
     font-size: 2rem;
   }
@@ -331,10 +352,6 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
   .project-details-card h4 {
     font-size: 1.5rem;
-  }
-
-  .project-details-card p {
-    font-size: 1.4rem;
   }
 
   .accordion-header span {
@@ -348,17 +365,85 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
 /* 768px / 48em ====================== */
 @media (max-width: 48em) {
+  .project-page .breadcrumb {
+    margin: 0 0.8rem;
+  }
+
+  .project-details-main-card h1 {
+    font-size: 2.4rem;
+  }
+
+  .project-details-card {
+    row-gap: 2.4rem;
+  }
+
   .project-details-main-card,
   .project-details-card {
     padding: 2.5rem;
+  }
+
+  .main-tag-container .divider span {
+    font-size: 1.4rem;
   }
 }
 
 /* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
+  .project-details-main-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-details-card {
+    row-gap: 2.2rem;
+  }
+
   .project-details-header {
     flex-direction: column;
     align-items: start;
     gap: 3rem;
+  }
+
+  .main-tag-container .divider span {
+    font-size: 1.3rem;
+  }
+}
+
+/* 480px / 30em ====================== */
+@media (max-width: 30em) {
+  .project-page .breadcrumb {
+    margin: 0 0.5rem;
+  }
+
+  .project-details-main-card,
+  .project-details-card {
+    padding: 2rem;
+  }
+
+  .project-details-card {
+    row-gap: 1.8rem;
+  }
+
+  .project-details-main-card h1 {
+    font-size: 2rem;
+  }
+
+  .project-details-card h2 {
+    font-size: 1.9rem;
+  }
+
+  .project-details-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-details-card h4 {
+    font-size: 1.4rem;
+  }
+
+  .accordion-header span {
+    font-size: 1.3rem;
+  }
+
+  .code-accordion pre {
+    font-size: 1.3rem;
   }
 }
