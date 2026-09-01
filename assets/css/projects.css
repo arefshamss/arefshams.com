@@ -3,7 +3,6 @@
 /* ============================================ */
 
 .all-projects .divider {
-  margin-top: 8rem;
   margin-bottom: 4rem;
 }
 
@@ -11,7 +10,7 @@
   padding: 5rem 0;
   margin-top: var(--header-height);
   width: 100%;
-  min-height: calc(var(--header-height) * 2);
+  min-height: calc(var(--header-height) * 3.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,24 +35,69 @@
   justify-content: center;
 }
 
+.all-projects-page .heading-1 {
+  font-size: 4rem;
+}
+
+.all-projects-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  gap: 8rem;
+}
+
+/* 1368px / 85.5em =================== */
+@media (max-width: 85.5em) {
+  .all-projects-page .heading-1 {
+    font-size: 3.4rem;
+  }
+}
+
+/* 1200px / 75em ===================== */
+@media (max-width: 75em) {
+  .all-projects-page .heading-1 {
+    font-size: 3rem;
+  }
+}
+
+/* 1024px / 64em ===================== */
+@media (max-width: 64em) {
+  .all-projects-page .heading-1 {
+    font-size: 2.8rem;
+  }
+}
+
 /* 880px / 55em ====================== */
 @media (max-width: 55em) {
-  .all-projects .divider {
+  .all-projects-container {
     margin-top: 6rem;
+    gap: 6rem;
+  }
+
+  .all-projects-page .heading-1 {
+    font-size: 2.6rem;
+  }
+
+  .all-projects .divider {
     margin-bottom: 3rem;
   }
 }
 
 /* 768px / 48em ====================== */
 @media (max-width: 48em) {
-  .all-projects .divider {
+  .all-projects-container {
     margin-top: 5rem;
+    gap: 5rem;
+  }
+
+  .all-projects-page .heading-1 {
+    font-size: 2.2rem;
+    line-height: 2;
   }
 
   .project-header {
     padding: 3rem 0;
     row-gap: 2rem;
-    min-height: calc(var(--header-height) * 1.75);
   }
 
   .project-header .container {
@@ -63,8 +107,16 @@
 
 /* 432px / 27em ====================== */
 @media (max-width: 27em) {
-  .all-projects .divider {
-    margin-top: 4rem;
+  .all-projects-page .heading-1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* 336px / 21em ====================== */
+@media (max-width: 21em) {
+  .all-projects-page .heading-1 {
+    text-align: center;
+    line-height: 2;
   }
 }
 
@@ -74,6 +126,34 @@
 
 .project-page .breadcrumb {
   margin: 0 1rem;
+}
+
+.project-page .heading-1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.project-page .heading-2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--color-heading-h2);
+  line-height: 1.5;
+}
+
+.project-page .heading-3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-heading-h3);
+  line-height: 1.5;
+}
+
+.project-page .heading-4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-heading-h4);
+  line-height: 1.5;
 }
 
 .project-details-section {
@@ -148,34 +228,6 @@
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.project-details-main-card h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  color: var(--color-text);
-  line-height: 1.5;
-}
-
-.project-details-card h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--color-heading-h2);
-  line-height: 1.5;
-}
-
-.project-details-card h3 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--color-heading-h3);
-  line-height: 1.5;
-}
-
-.project-details-card h4 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--color-heading-h4);
-  line-height: 1.5;
 }
 
 .project-details-list {
@@ -313,19 +365,19 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     row-gap: 2.8rem;
   }
 
-  .project-details-main-card h1 {
+  .project-page .heading-1 {
     font-size: 2.8rem;
   }
 
-  .project-details-card h2 {
+  .project-page .heading-2 {
     font-size: 2.2rem;
   }
 
-  .project-details-card h3 {
+  .project-page .heading-3 {
     font-size: 2rem;
   }
 
-  .project-details-card h4 {
+  .project-page .heading-4 {
     font-size: 1.8rem;
   }
 
@@ -353,19 +405,19 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     font-size: 1.5rem;
   }
 
-  .project-details-main-card h1 {
+  .project-page .heading-1 {
     font-size: 2.6rem;
   }
 
-  .project-details-card h2 {
+  .project-page .heading-2 {
     font-size: 2rem;
   }
 
-  .project-details-card h3 {
+  .project-page .heading-3 {
     font-size: 1.8rem;
   }
 
-  .project-details-card h4 {
+  .project-page .heading-4 {
     font-size: 1.6rem;
   }
 
@@ -384,7 +436,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     margin: 0 0.8rem;
   }
 
-  .project-details-main-card h1 {
+  .project-page .heading-1 {
     font-size: 2.4rem;
   }
 
@@ -404,7 +456,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
 /* 680px / 42.5em ==================== */
 @media (max-width: 42.5em) {
-  .project-details-main-card h1 {
+  .project-page .heading-1 {
     font-size: 2.2rem;
   }
 
@@ -438,19 +490,19 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     row-gap: 1.8rem;
   }
 
-  .project-details-main-card h1 {
+  .project-page .heading-1 {
     font-size: 2rem;
   }
 
-  .project-details-card h2 {
+  .project-page .heading-2 {
     font-size: 1.8rem;
   }
 
-  .project-details-card h3 {
+  .project-page .heading-3 {
     font-size: 1.6rem;
   }
 
-  .project-details-card h4 {
+  .project-page .heading-4 {
     font-size: 1.45rem;
   }
 

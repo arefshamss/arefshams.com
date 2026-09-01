@@ -750,24 +750,14 @@
   background-color: var(--color-secondary);
 }
 
-.service-card h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
 .service-card p {
   color: var(--color-text-muted);
-  font-size: 1.6rem;
 }
 
 /* 1368px / 85.5em =================== */
 @media (max-width: 85.5em) {
   .service-section {
     padding: 9rem 0;
-  }
-
-  .service-card h3 {
-    font-size: 2.2rem;
   }
 }
 /* 1200px / 75em ===================== */
@@ -784,24 +774,12 @@
     row-gap: 1.5rem;
     padding: 1.8rem 2.8rem;
   }
-
-  .service-card h3 {
-    font-size: 2rem;
-  }
 }
 
 /* 1024px / 64em ===================== */
 @media (max-width: 64em) {
   .service-card-inner {
     padding: 1.8rem 2.6rem;
-  }
-
-  .service-card h3 {
-    font-size: 1.9rem;
-  }
-
-  .service-card p {
-    font-size: 1.5rem;
   }
 }
 
@@ -843,14 +821,6 @@
 
   .service-icon {
     font-size: 2.6rem;
-  }
-
-  .service-card h3 {
-    font-size: 1.7rem;
-  }
-
-  .service-card p {
-    font-size: 1.4rem;
   }
 }
 
@@ -912,11 +882,6 @@
   flex-direction: column;
   gap: 2rem;
 }
-.project-card h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
 
 .project-img {
   overflow: hidden;
@@ -973,18 +938,8 @@
     margin-bottom: 7rem;
   }
 
-  .project-card h3 {
-    font-size: 2.2rem;
-  }
   .project-icon {
     font-size: 3rem;
-  }
-}
-
-/* 1024px / 64em ===================== */
-@media (max-width: 64em) {
-  .project-card h3 {
-    font-size: 2.2rem;
   }
 }
 
@@ -996,10 +951,6 @@
 
   .project-section .section-header {
     margin-bottom: 5rem;
-  }
-
-  .project-card h3 {
-    font-size: 2rem;
   }
 
   .project-icon {
@@ -1019,10 +970,6 @@
 
   .project-cards {
     grid-template-columns: 1fr;
-  }
-
-  .project-card h3 {
-    font-size: 1.8rem;
   }
 }
 
@@ -1079,10 +1026,7 @@
   padding: 3.6rem 4rem;
 }
 
-.resume-card h4 {
-  color: var(--color-white);
-  font-size: 2.6rem;
-  font-weight: 700;
+.resume-card .heading-3 {
   margin-bottom: 2.4rem;
 }
 
@@ -1110,10 +1054,6 @@
   .resume-card-inner {
     padding: 3.4rem 3.8rem;
   }
-
-  .resume-card h4 {
-    font-size: 2.4rem;
-  }
 }
 
 /* 880px / 55em ====================== */
@@ -1124,10 +1064,6 @@
 
   .resume-card-inner {
     padding: 3.2rem 3.6rem;
-  }
-
-  .resume-card h4 {
-    font-size: 2.2rem;
   }
 
   .resume-download {
@@ -1150,10 +1086,6 @@
     padding: 3rem 3.4rem;
   }
 
-  .resume-card h4 {
-    font-size: 2rem;
-  }
-
   .resume-download {
     gap: 1.2rem;
   }
@@ -1167,13 +1099,6 @@
 @media (max-width: 42.5em) {
   .resume-card-inner {
     padding: 2.8rem 3.2rem;
-  }
-}
-
-/* 480px / 30em ====================== */
-@media (max-width: 30em) {
-  .resume-card h4 {
-    font-size: 1.8rem;
   }
 }
 
