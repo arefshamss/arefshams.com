@@ -87,7 +87,7 @@
 }
 
 /* 928px / 58em ====================== */
-@media (max-width: 55em) {
+@media (max-width: 58em) {
   :root {
     --header-height: 6.6rem;
   }

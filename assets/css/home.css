@@ -408,7 +408,7 @@
 }
 
 /* 928px / 58em ====================== */
-@media (max-width: 55em) {
+@media (max-width: 58em) {
   .about-description {
     padding: 4.2rem 2.6rem;
   }
