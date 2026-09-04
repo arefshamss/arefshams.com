@@ -247,6 +247,15 @@ svg {
 /* ============================================ */
 
 .heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+  transition: color 0.5s ease;
+}
+
+.heading-1,
 .heading-2 {
   font-weight: 700;
   color: var(--color-white);
@@ -265,10 +274,12 @@ svg {
 
 .heading-2 {
   font-size: 4rem;
+  line-height: 2;
 }
 
 .heading-3 {
   font-size: 2.6rem;
+  line-height: 2;
 }
 
 .subtitle {
@@ -392,7 +403,6 @@ body p {
 
   .heading-2 {
     font-size: 2.2rem;
-    line-height: 2;
   }
 
   .heading-3 {
