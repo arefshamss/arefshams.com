@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url("../img/shapes/hero-shape.webp");
+  background-image: url("/assets/img/shapes/hero-shape.webp");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -88,7 +88,7 @@
   width: 115%;
   height: 115%;
 
-  background-image: url("../img/shapes/rotating-ring.webp");
+  background-image: url("/assets/img/shapes/rotating-ring.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -667,7 +667,7 @@
       rgba(var(--color-secondary-rgb), 0.6),
       rgba(var(--color-secondary-rgb), 0.6)
     ),
-    url("../img/shapes/service-shape.webp");
+    url("/assets/img/shapes/service-shape.webp");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -772,7 +772,7 @@
         rgba(var(--color-secondary-rgb), 0.8),
         rgba(var(--color-secondary-rgb), 0.8)
       ),
-      url("../img/shapes/service-shape.webp");
+      url("/assets/img/shapes/service-shape.webp");
   }
 
   .service-container {
@@ -808,7 +808,7 @@
         rgba(var(--color-secondary-rgb), 0.9),
         rgba(var(--color-secondary-rgb), 0.9)
       ),
-      url("../img/shapes/service-shape.webp");
+      url("/assets/img/shapes/service-shape.webp");
   }
 
   .service-card-inner {
@@ -1055,7 +1055,7 @@
       rgba(var(--color-secondary-rgb), 0.6),
       rgba(var(--color-secondary-rgb), 0.6)
     ),
-    url("../img/shapes/contact-shape.webp");
+    url("/assets/img/shapes/contact-shape.webp");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1395,7 +1395,7 @@
         rgba(var(--color-secondary-rgb), 0.8),
         rgba(var(--color-secondary-rgb), 0.8)
       ),
-      url("../img/shapes/contact-shape.webp");
+      url("/assets/img/shapes/contact-shape.webp");
   }
 
   .contact-title {
