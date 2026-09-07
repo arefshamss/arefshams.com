@@ -194,26 +194,40 @@ if (btnNav && header) {
   });
 }
 
-// Hide Header on Scroll down (Mobile Landscape / Low Height)
+// Hide header on scroll down only on low-height screens
 if (header) {
+  const lowHeightMedia = window.matchMedia("(max-height: 31.25em)");
+
   let lastScrollY = 0;
-  const scrollThreshold = 10;
+  let isHeaderHidden = false;
 
   lenis.on("scroll", ({ scroll }) => {
-    if (header.classList.contains("nav-open")) return;
-
-    if (window.innerHeight <= 500) {
-      if (Math.abs(scroll - lastScrollY) < scrollThreshold) {
-        return;
-      }
-
-      if (scroll > lastScrollY && scroll > 60) {
-        header.classList.add("header-hidden");
-      } else {
+    if (!lowHeightMedia.matches) {
+      if (isHeaderHidden) {
         header.classList.remove("header-hidden");
+        isHeaderHidden = false;
       }
-    } else {
-      header.classList.remove("header-hidden");
+
+      lastScrollY = scroll;
+      return;
+    }
+
+    if (header.classList.contains("nav-open")) {
+      lastScrollY = scroll;
+      return;
+    }
+
+    const delta = scroll - lastScrollY;
+
+    if (Math.abs(delta) < 10) {
+      return;
+    }
+
+    const shouldHide = delta > 0 && scroll > 60;
+
+    if (shouldHide !== isHeaderHidden) {
+      header.classList.toggle("header-hidden", shouldHide);
+      isHeaderHidden = shouldHide;
     }
 
     lastScrollY = scroll;

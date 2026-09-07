@@ -170,6 +170,9 @@ html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+}
+
+html:not(.lenis) {
   scroll-behavior: smooth;
 }
 
