@@ -564,6 +564,56 @@ if (form && result) {
   });
 }
 
+// Contact form validation & phone input filter
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  const fields = contactForm.querySelectorAll(
+    "input[required], textarea[required]",
+  );
+
+  fields.forEach((field) => {
+    field.addEventListener("invalid", () => {
+      if (field.validity.valueMissing) {
+        field.setCustomValidity("لطفاً این فیلد را پر کنید.");
+      } else if (field.validity.typeMismatch) {
+        field.setCustomValidity("لطفاً فرمت صحیح را وارد کنید.");
+      }
+      field.classList.add("input-error");
+    });
+
+    field.addEventListener("input", () => {
+      field.setCustomValidity("");
+      field.classList.remove("input-error");
+    });
+  });
+
+  const phoneInput = document.getElementById("phone-number");
+  if (phoneInput) {
+    phoneInput.addEventListener("input", (e) => {
+      let val = e.target.value;
+
+      if (val.startsWith("+")) {
+        e.target.value = val.replace(/[^0-9۰-۹+\s\-()]/g, "");
+        return;
+      }
+
+      const digits = val.replace(/[^0-9۰-۹]/g, "");
+
+      if (digits.startsWith("09") || digits.startsWith("۰۹")) {
+        if (digits.length <= 4) {
+          e.target.value = digits;
+        } else if (digits.length <= 7) {
+          e.target.value = `${digits.slice(0, 4)} ${digits.slice(4)}`;
+        } else {
+          e.target.value = `${digits.slice(0, 4)} ${digits.slice(4, 7)} ${digits.slice(7, 11)}`;
+        }
+      } else {
+        e.target.value = digits.slice(0, 11);
+      }
+    });
+  }
+}
+
 ///////////////////////////////////////////////////////////
 // Scroll to Top
 

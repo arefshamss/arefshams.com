@@ -1188,6 +1188,14 @@
   transform: scale(1.01);
 }
 
+.input-error {
+  border-color: rgba(var(--color-danger-rgb), 0.7) !important;
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 6px rgba(var(--color-danger-rgb), 0.2) !important;
+}
+
 /* AUTOFILL =================================== */
 
 .contact-form input:-webkit-autofill,
