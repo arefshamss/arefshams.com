@@ -567,16 +567,23 @@ if (form && result) {
 // Contact form validation & phone input filter
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
-  const fields = contactForm.querySelectorAll(
-    "input[required], textarea[required]",
-  );
+  const fields = contactForm.querySelectorAll("input, textarea");
 
   fields.forEach((field) => {
     field.addEventListener("invalid", () => {
       if (field.validity.valueMissing) {
         field.setCustomValidity("لطفاً این فیلد را پر کنید.");
-      } else if (field.validity.typeMismatch) {
-        field.setCustomValidity("لطفاً فرمت صحیح را وارد کنید.");
+      } else if (
+        field.validity.typeMismatch ||
+        field.validity.patternMismatch
+      ) {
+        if (field.type === "email") {
+          field.setCustomValidity("لطفاً یک آدرس ایمیل معتبر وارد کنید.");
+        } else {
+          field.setCustomValidity("لطفاً فرمت صحیح را وارد کنید.");
+        }
+      } else {
+        field.setCustomValidity("لطفاً مقدار معتبر وارد کنید.");
       }
       field.classList.add("input-error");
     });
