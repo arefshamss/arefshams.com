@@ -178,8 +178,6 @@ const body = document.body;
 const header = document.querySelector(".header");
 const btnNav = document.querySelector(".btn-mobile-nav");
 
-// if (body.classList.contains("home-page") && btnNav && header)
-
 if (btnNav && header) {
   btnNav.addEventListener("click", function () {
     const isOpen = header.classList.toggle("nav-open");
@@ -193,6 +191,32 @@ if (btnNav && header) {
       header.classList.remove("nav-open");
       btnNav.setAttribute("aria-expanded", "false");
     });
+  });
+}
+
+// Hide Header on Scroll down (Mobile Landscape / Low Height)
+if (header) {
+  let lastScrollY = 0;
+  const scrollThreshold = 10;
+
+  lenis.on("scroll", ({ scroll }) => {
+    if (header.classList.contains("nav-open")) return;
+
+    if (window.innerHeight <= 500) {
+      if (Math.abs(scroll - lastScrollY) < scrollThreshold) {
+        return;
+      }
+
+      if (scroll > lastScrollY && scroll > 60) {
+        header.classList.add("header-hidden");
+      } else {
+        header.classList.remove("header-hidden");
+      }
+    } else {
+      header.classList.remove("header-hidden");
+    }
+
+    lastScrollY = scroll;
   });
 }
 
