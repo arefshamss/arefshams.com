@@ -273,15 +273,17 @@
           </div>
           <!-- Section 1 -->
           <div class="project-details-card">
-            <p>
-              این پروژه یک وب‌سایت چندزبانه است که با استفاده از WordPress
-              پیاده‌سازی شده و تمرکز اصلی آن روی کنترل دسترسی کاربران،
-              اعتبارسنجی کدهای اختصاصی و جمع‌آوری اطلاعات سرمایه‌گذاری می‌باشد.
-              کاربران از طریق QR Code به وب‌سایت هدایت می‌شوند و پس از آن،
-              فرآیند دسترسی تنها بر اساس وارد کردن سریال یکتای چاپ‌شده روی کارت
-              انجام می‌گیرد. QR Code هیچ نقشی در اعتبارسنجی یا امنیت نداشته و
-              صرفاً برای تسهیل ورود کاربر به سایت استفاده شده است.
-            </p>
+            <div class="project-details-content">
+              <p>
+                این پروژه یک وب‌سایت چندزبانه است که با استفاده از WordPress
+                پیاده‌سازی شده و تمرکز اصلی آن روی کنترل دسترسی کاربران،
+                اعتبارسنجی کدهای اختصاصی و جمع‌آوری اطلاعات سرمایه‌گذاری
+                می‌باشد. کاربران از طریق QR Code به وب‌سایت هدایت می‌شوند و پس
+                از آن، فرآیند دسترسی تنها بر اساس وارد کردن سریال یکتای چاپ‌شده
+                روی کارت انجام می‌گیرد. QR Code هیچ نقشی در اعتبارسنجی یا امنیت
+                نداشته و صرفاً برای تسهیل ورود کاربر به سایت استفاده شده است.
+              </p>
+            </div>
           </div>
           <!-- Section 2 -->
           <div class="project-details-card">
@@ -289,34 +291,36 @@
               <h2 class="heading-2">امکانات اصلی</h2>
               <div class="divider-line"></div>
             </div>
-            <ul class="project-details-list">
-              <li>
-                <p>وب‌سایت ۵ زبانه (فارسی، انگلیسی، روسی، چینی، عربی)</p>
-              </li>
-              <li>
-                <p>انتخاب زبان و ذخیره آن کاربر در Cookie مرورگر</p>
-              </li>
-              <li>
-                <p>هدایت کاربر به سایت از طریق QR Code</p>
-              </li>
-              <li>
-                <p>
-                  سیستم اعتبارسنجی سریال یکتا (پیاده‌سازی سفارشی در Backend)
-                </p>
-              </li>
-              <li>
-                <p>نمایش پیام خطای چندزبانه بر اساس زبان کاربر</p>
-              </li>
-              <li>
-                <p>فرم چندمرحله‌ای ثبت اطلاعات سرمایه‌گذاری</p>
-              </li>
-              <li>
-                <p>ارسال خودکار داده‌ها به CRM</p>
-              </li>
-              <li>
-                <p>تحلیل رفتار کاربران با Microsoft Clarity</p>
-              </li>
-            </ul>
+            <div class="project-details-content">
+              <ul class="project-details-list">
+                <li>
+                  <p>وب‌سایت ۵ زبانه (فارسی، انگلیسی، روسی، چینی، عربی)</p>
+                </li>
+                <li>
+                  <p>انتخاب زبان و ذخیره آن کاربر در Cookie مرورگر</p>
+                </li>
+                <li>
+                  <p>هدایت کاربر به سایت از طریق QR Code</p>
+                </li>
+                <li>
+                  <p>
+                    سیستم اعتبارسنجی سریال یکتا (پیاده‌سازی سفارشی در Backend)
+                  </p>
+                </li>
+                <li>
+                  <p>نمایش پیام خطای چندزبانه بر اساس زبان کاربر</p>
+                </li>
+                <li>
+                  <p>فرم چندمرحله‌ای ثبت اطلاعات سرمایه‌گذاری</p>
+                </li>
+                <li>
+                  <p>ارسال خودکار داده‌ها به CRM</p>
+                </li>
+                <li>
+                  <p>تحلیل رفتار کاربران با Microsoft Clarity</p>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- Section 3 -->
           <div class="project-details-card">
@@ -324,27 +328,29 @@
               <h2 class="heading-2">اعتبارسنجی سریال و کنترل دسترسی</h2>
               <div class="divider-line"></div>
             </div>
-            <p>
-              پس از انتخاب زبان، کاربر سریال درج‌شده روی کارت را وارد می‌کند.
-              اعتبارسنجی سریال به‌صورت سفارشی و در سطح Backend (PHP) انجام
-              می‌شود و در صورت نامعتبر بودن، پیام خطا متناسب با زبان کاربر نمایش
-              داده می‌شود.
-            </p>
-            <details class="code-accordion">
-              <summary>
-                <div class="accordion-header">
-                  <iconify-icon
-                    class="icon php"
-                    icon="fa7-brands:php"
-                  ></iconify-icon>
-                  <span> مشاهده کد (PHP)</span>
-                </div>
-              </summary>
-              <pre
-                data-src="/assets/snippets/php/gform-validation.php"
-                class="highlight-height line-numbers language-php"
-              ></pre>
-            </details>
+            <div class="project-details-content">
+              <p>
+                پس از انتخاب زبان، کاربر سریال درج‌شده روی کارت را وارد می‌کند.
+                اعتبارسنجی سریال به‌صورت سفارشی و در سطح Backend (PHP) انجام
+                می‌شود و در صورت نامعتبر بودن، پیام خطا متناسب با زبان کاربر
+                نمایش داده می‌شود.
+              </p>
+              <details class="code-accordion">
+                <summary>
+                  <div class="accordion-header">
+                    <iconify-icon
+                      class="icon php"
+                      icon="fa7-brands:php"
+                    ></iconify-icon>
+                    <span> مشاهده کد (PHP)</span>
+                  </div>
+                </summary>
+                <pre
+                  data-src="/assets/snippets/php/gform-validation.php"
+                  class="highlight-height line-numbers language-php"
+                ></pre>
+              </details>
+            </div>
           </div>
           <!-- Section 4 -->
           <div class="project-details-card">
@@ -352,26 +358,28 @@
               <h2 class="heading-2">مدیریت زبان کاربر</h2>
               <div class="divider-line"></div>
             </div>
-            <p>
-              زبان انتخاب‌شده کاربر در Cookie مرورگر ذخیره می‌شود تا در
-              بازدیدهای بعدی بدون نیاز به انتخاب مجدد اعمال گردد و با Polylang
-              همگام بماند.
-            </p>
-            <details class="code-accordion">
-              <summary>
-                <div class="accordion-header">
-                  <iconify-icon
-                    class="icon javascript"
-                    icon="fa7-brands:js-square"
-                  ></iconify-icon>
-                  <span> مشاهده کد (JavaScript)</span>
-                </div>
-              </summary>
-              <pre
-                data-src="/assets/snippets/js/language-cookie.js"
-                class="highlight-height line-numbers language-javascript"
-              ></pre>
-            </details>
+            <div class="project-details-content">
+              <p>
+                زبان انتخاب‌شده کاربر در Cookie مرورگر ذخیره می‌شود تا در
+                بازدیدهای بعدی بدون نیاز به انتخاب مجدد اعمال گردد و با Polylang
+                همگام بماند.
+              </p>
+              <details class="code-accordion">
+                <summary>
+                  <div class="accordion-header">
+                    <iconify-icon
+                      class="icon javascript"
+                      icon="fa7-brands:js-square"
+                    ></iconify-icon>
+                    <span> مشاهده کد (JavaScript)</span>
+                  </div>
+                </summary>
+                <pre
+                  data-src="/assets/snippets/js/language-cookie.js"
+                  class="highlight-height line-numbers language-javascript"
+                ></pre>
+              </details>
+            </div>
           </div>
           <!-- Section 5 -->
           <div class="project-details-card">
@@ -402,17 +410,21 @@
               <h2 class="heading-2">تحلیل رفتار کاربران</h2>
               <div class="divider-line"></div>
             </div>
-            <ul class="project-details-list">
-              <li>
-                <p>اتصال وب‌سایت به Microsoft Clarity</p>
-              </li>
-              <li>
-                <p>بررسی Heatmap، Scroll و Session Recording</p>
-              </li>
-              <li>
-                <p>تحلیل رفتار کاربران در مراحل ورود، اعتبارسنجی و تکمیل فرم</p>
-              </li>
-            </ul>
+            <div class="project-details-content">
+              <ul class="project-details-list">
+                <li>
+                  <p>اتصال وب‌سایت به Microsoft Clarity</p>
+                </li>
+                <li>
+                  <p>بررسی Heatmap، Scroll و Session Recording</p>
+                </li>
+                <li>
+                  <p>
+                    تحلیل رفتار کاربران در مراحل ورود، اعتبارسنجی و تکمیل فرم
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- Section 7 -->
           <div class="project-details-card">
@@ -420,32 +432,34 @@
               <h2 class="heading-2">فناوری‌ها و ابزارها</h2>
               <div class="divider-line"></div>
             </div>
-            <ul class="project-details-list">
-              <li>
-                <p>WordPress</p>
-              </li>
-              <li>
-                <p>PHP (منطق سفارشی و اعتبارسنجی)</p>
-              </li>
-              <li>
-                <p>JavaScript</p>
-              </li>
-              <li>
-                <p>Gravity Forms</p>
-              </li>
-              <li>
-                <p>Polylang</p>
-              </li>
-              <li>
-                <p>HubSpot Integration</p>
-              </li>
-              <li>
-                <p>Microsoft Clarity</p>
-              </li>
-              <li>
-                <p>Cookie-based Language Handling</p>
-              </li>
-            </ul>
+            <div class="project-details-content">
+              <ul class="project-details-list">
+                <li>
+                  <p>WordPress</p>
+                </li>
+                <li>
+                  <p>PHP (منطق سفارشی و اعتبارسنجی)</p>
+                </li>
+                <li>
+                  <p>JavaScript</p>
+                </li>
+                <li>
+                  <p>Gravity Forms</p>
+                </li>
+                <li>
+                  <p>Polylang</p>
+                </li>
+                <li>
+                  <p>HubSpot Integration</p>
+                </li>
+                <li>
+                  <p>Microsoft Clarity</p>
+                </li>
+                <li>
+                  <p>Cookie-based Language Handling</p>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- Section 8 -->
           <div class="project-details-card">
@@ -453,11 +467,13 @@
               <h2 class="heading-2">جمع‌بندی</h2>
               <div class="divider-line"></div>
             </div>
-            <p>
-              این پروژه فراتر از یک سایت وردپرسی صرف بوده و تمرکز آن بر کنترل
-              جریان کاربر، اعتبارسنجی واقعی در Backend، تجربه کاربری دقیق و
-              یکپارچه‌سازی با CRM است.
-            </p>
+            <div class="project-details-content">
+              <p>
+                این پروژه فراتر از یک سایت وردپرسی صرف بوده و تمرکز آن بر کنترل
+                جریان کاربر، اعتبارسنجی واقعی در Backend، تجربه کاربری دقیق و
+                یکپارچه‌سازی با CRM است.
+              </p>
+            </div>
           </div>
         </div>
         <div class="container center-text see-more-projects animation fade-in">

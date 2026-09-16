@@ -20,8 +20,8 @@
   background-image:
     linear-gradient(
       to right bottom,
-      rgba(var(--color-secondary-rgb), 0.4),
-      rgba(var(--color-secondary-rgb), 0.4)
+      rgba(var(--color-secondary-rgb) / 0.4),
+      rgba(var(--color-secondary-rgb) / 0.4)
     ),
     url("/assets/img/shapes/service-shape.webp");
   background-position: bottom center;
@@ -213,7 +213,7 @@
 }
 
 .project-details-card:hover {
-  box-shadow: 0 0 0 8px rgba(var(--color-secondary-rgb), 0.6);
+  box-shadow: 0 0 0 8px rgba(var(--color-secondary-rgb) / 0.6);
   transform: scale(1.01);
 }
 
@@ -365,6 +365,10 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     row-gap: 2.8rem;
   }
 
+  .project-details-content {
+    row-gap: 1.8rem;
+  }
+
   .project-page .heading-1 {
     font-size: 2.8rem;
   }
@@ -394,6 +398,10 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 @media (max-width: 55em) {
   .project-details-card {
     row-gap: 2.6rem;
+  }
+
+  .project-details-content {
+    row-gap: 1.6rem;
   }
 
   .project-details-main-card,
@@ -444,6 +452,10 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     row-gap: 2.4rem;
   }
 
+  .project-details-content {
+    row-gap: 1.4rem;
+  }
+
   .project-details-main-card,
   .project-details-card {
     padding: 2.5rem;
@@ -464,10 +476,19 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     row-gap: 2.2rem;
   }
 
+  .project-details-content {
+    row-gap: 1.2rem;
+  }
+
   .project-details-header {
     flex-direction: column;
     align-items: start;
     gap: 3rem;
+  }
+
+  .project-details-list li p {
+    padding-right: 1.8rem;
+    margin-bottom: 0.8rem;
   }
 
   .main-tag-container .divider span {
@@ -487,9 +508,28 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 
   .project-details-card {
-    row-gap: 1.8rem;
+    row-gap: 2rem;
   }
 
+  .project-details-content {
+    row-gap: 1rem;
+  }
+
+  .project-page .heading-2 {
+    font-size: 1.9rem;
+  }
+
+  .accordion-header span {
+    font-size: 1.3rem;
+  }
+
+  .code-accordion pre {
+    font-size: 1.3rem;
+  }
+}
+
+/* 432px / 27em ====================== */
+@media (max-width: 27em) {
   .project-page .heading-1 {
     font-size: 2rem;
   }
@@ -503,14 +543,11 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   }
 
   .project-page .heading-4 {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
 
-  .accordion-header span {
-    font-size: 1.3rem;
-  }
-
-  .code-accordion pre {
-    font-size: 1.3rem;
+  .project-details-list li p {
+    padding-right: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }

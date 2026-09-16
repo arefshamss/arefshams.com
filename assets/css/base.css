@@ -9,24 +9,24 @@
   --color-primary-light: #ffd249;
   --color-primary-dark: #ca9c39;
   --color-primary-accent: #b89039;
-  --color-primary-rgb: 253, 196, 72;
+  --color-primary-rgb: 253 196 72;
   --color-secondary: #141414;
   --color-secondary-dark: #090909;
   --color-secondary-light: #171717;
   --color-secondary-lighter: #1a1a1a;
-  --color-secondary-lighter-rgb: 26, 26, 26;
-  --color-secondary-rgb: 20, 20, 20;
+  --color-secondary-lighter-rgb: 26 26 26;
+  --color-secondary-rgb: 20 20 20;
 
   --color-bg: #060606;
-  --color-bg-rgb: 6, 6, 6;
+  --color-bg-rgb: 6 6 6;
 
   --color-text: #e5e5e5;
   --color-text-muted: #9f9f9f;
   --color-grey: #9c9c9c;
   --color-white: #fff;
-  --color-white-rgb: 255, 255, 255;
+  --color-white-rgb: 255 255 255;
   --color-black: #000;
-  --color-black-rgb: 0, 0, 0;
+  --color-black-rgb: 0 0 0;
 
   --color-selection-bg: #353535;
   --color-selection-text: #ffc335;
@@ -34,9 +34,9 @@
   --color-border: #ffffff14;
 
   --color-success: #22ce61;
-  --color-success-rgb: 34, 206, 97;
+  --color-success-rgb: 34 206 97;
   --color-danger: #d54444;
-  --color-danger-rgb: 213, 68, 68;
+  --color-danger-rgb: 213 68 68;
 
   --color-wordpress: #028cb0;
   --color-elementor: #92003b;
@@ -274,7 +274,7 @@ svg {
 
 .heading-1 {
   font-size: 6.4rem;
-  text-shadow: 0 5px 12px rgba(var(--color-black-rgb), 0.4);
+  text-shadow: 0 5px 12px rgb(var(--color-black-rgb) / 0.4);
 }
 
 .heading-2 {

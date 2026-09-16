@@ -52,8 +52,8 @@
   height: 100%;
   display: block;
   border-radius: var(--border-radius-circle);
-  border: solid rgba(var(--color-primary-rgb), 0.7) 2px;
-  box-shadow: 0px 0px 25px 0px rgba(var(--color-bg-rgb), 0.5);
+  border: solid rgb(var(--color-primary-rgb) / 0.7) 2px;
+  box-shadow: 0px 0px 25px 0px rgb(var(--color-bg-rgb) / 0.5);
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -291,8 +291,8 @@
     150deg,
     var(--color-secondary) 0%,
     var(--color-secondary) 40%,
-    rgba(var(--color-primary-rgb), 0.15) 70%,
-    rgba(var(--color-primary-rgb), 0.45) 100%
+    rgb(var(--color-primary-rgb) / 0.15) 70%,
+    rgb(var(--color-primary-rgb) / 0.45) 100%
   );
   padding: 4.8rem;
 }
@@ -664,15 +664,15 @@
   background-image:
     linear-gradient(
       to right bottom,
-      rgba(var(--color-secondary-rgb), 0.6),
-      rgba(var(--color-secondary-rgb), 0.6)
+      rgb(var(--color-secondary-rgb) / 0.6),
+      rgb(var(--color-secondary-rgb) / 0.6)
     ),
     url("/assets/img/shapes/service-shape.webp");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: solid 1px rgba(var(--color-white-rgb), 0.08);
-  border-bottom: solid 1px rgba(var(--color-white-rgb), 0.08);
+  border-top: solid 1px rgb(var(--color-white-rgb) / 0.08);
+  border-bottom: solid 1px rgb(var(--color-white-rgb) / 0.08);
   overflow-y: hidden;
 }
 
@@ -695,7 +695,7 @@
   border-radius: var(--border-radius-circle);
   background-color: var(--color-secondary);
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px 1px rgba(var(--color-white-rgb), 0.05) inset;
+  box-shadow: 0 0 10px 1px rgb(var(--color-white-rgb) / 0.05) inset;
 }
 
 .service-icon .icon {
@@ -724,13 +724,13 @@
   padding: 2rem 3rem;
   border: solid 2px var(--color-border);
   border-radius: var(--border-radius-main);
-  background-color: rgba(var(--color-secondary-rgb), 0.5);
+  background-color: rgb(var(--color-secondary-rgb) / 0.5);
   transition: all 0.6s;
   height: 100%;
 }
 
 .service-card-inner:hover {
-  box-shadow: 0 0 0 8px rgba(var(--color-secondary-lighter-rgb), 0.6);
+  box-shadow: 0 0 0 8px rgb(var(--color-secondary-lighter-rgb) / 0.6);
   transform: scale(1.01);
   background-color: var(--color-secondary);
 }
@@ -769,8 +769,8 @@
     background-image:
       linear-gradient(
         to right bottom,
-        rgba(var(--color-secondary-rgb), 0.8),
-        rgba(var(--color-secondary-rgb), 0.8)
+        rgb(var(--color-secondary-rgb) / 0.8),
+        rgb(var(--color-secondary-rgb) / 0.8)
       ),
       url("/assets/img/shapes/service-shape.webp");
   }
@@ -805,8 +805,8 @@
     background-image:
       linear-gradient(
         to right bottom,
-        rgba(var(--color-secondary-rgb), 0.9),
-        rgba(var(--color-secondary-rgb), 0.9)
+        rgb(var(--color-secondary-rgb) / 0.9),
+        rgb(var(--color-secondary-rgb) / 0.9)
       ),
       url("/assets/img/shapes/service-shape.webp");
   }
@@ -816,7 +816,7 @@
   }
 
   .service-card-inner:hover {
-    box-shadow: 0 0 0 5px rgba(var(--color-secondary-lighter-rgb), 0.6);
+    box-shadow: 0 0 0 5px rgb(var(--color-secondary-lighter-rgb) / 0.6);
     transform: scale(1.009);
   }
 }
@@ -852,6 +852,18 @@
   overflow: hidden;
   border: solid 1px var(--color-border);
   border-radius: var(--border-radius-main);
+  position: relative;
+}
+
+.project-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 12px rgb(var(--color-black-rgb) / 0.6),
+    inset 0 0 3px rgb(var(--color-black-rgb) / 0.3);
 }
 
 .project-img img {
@@ -1052,8 +1064,8 @@
   background-image:
     linear-gradient(
       to right bottom,
-      rgba(var(--color-secondary-rgb), 0.6),
-      rgba(var(--color-secondary-rgb), 0.6)
+      rgb(var(--color-secondary-rgb) / 0.6),
+      rgb(var(--color-secondary-rgb) / 0.6)
     ),
     url("/assets/img/shapes/contact-shape.webp");
   background-position: center right;
@@ -1130,7 +1142,7 @@
   border: 2px solid var(--color-border);
   background-color: var(--color-secondary);
   border-radius: var(--border-radius-main);
-  box-shadow: 0 1px 2px rgba(var(--color-black-rgb), 0.1);
+  box-shadow: 0 1px 2px rgb(var(--color-black-rgb) / 0.1);
   padding: 1rem;
   transition: all 0.5s ease;
 }
@@ -1184,16 +1196,16 @@
 
 .contact-form *:focus {
   outline: none;
-  box-shadow: 0 0 0 6px rgba(var(--color-secondary-lighter-rgb), 0.7);
+  box-shadow: 0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.7);
   transform: scale(1.01);
 }
 
 .input-error {
-  border-color: rgba(var(--color-danger-rgb), 0.7) !important;
+  border-color: rgb(var(--color-danger-rgb) / 0.7) !important;
 }
 
 .input-error:focus {
-  box-shadow: 0 0 0 6px rgba(var(--color-danger-rgb), 0.2) !important;
+  box-shadow: 0 0 0 6px rgb(var(--color-danger-rgb) / 0.2) !important;
 }
 
 /* AUTOFILL =================================== */
@@ -1221,11 +1233,11 @@
   transform: scale(1.01);
 
   -webkit-box-shadow:
-    0 0 0 6px rgba(var(--color-secondary-lighter-rgb), 0.7),
+    0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.7),
     0 0 0 1000px var(--color-secondary) inset;
 
   box-shadow:
-    0 0 0 6px rgba(var(--color-secondary-lighter-rgb), 0.7),
+    0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.7),
     0 0 0 1000px var(--color-secondary) inset;
 }
 
@@ -1291,14 +1303,14 @@
 
 .form-result.is-success {
   color: var(--color-success);
-  background-color: rgba(var(--color-success-rgb), 0.04);
-  border: solid 1px rgba(var(--color-success-rgb), 0.2);
+  background-color: rgb(var(--color-success-rgb) / 0.04);
+  border: solid 1px rgb(var(--color-success-rgb) / 0.2);
 }
 
 .form-result.is-error {
   color: var(--color-danger);
-  background-color: rgba(var(--color-danger-rgb), 0.04);
-  border: solid 1px rgba(var(--color-danger-rgb), 0.2);
+  background-color: rgb(var(--color-danger-rgb) / 0.04);
+  border: solid 1px rgb(var(--color-danger-rgb) / 0.2);
 }
 
 /* 1368px / 85.5em =================== */
@@ -1400,8 +1412,8 @@
     background-image:
       linear-gradient(
         to right bottom,
-        rgba(var(--color-secondary-rgb), 0.8),
-        rgba(var(--color-secondary-rgb), 0.8)
+        rgb(var(--color-secondary-rgb) / 0.8),
+        rgb(var(--color-secondary-rgb) / 0.8)
       ),
       url("/assets/img/shapes/contact-shape.webp");
   }
