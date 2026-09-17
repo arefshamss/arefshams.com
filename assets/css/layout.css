@@ -483,6 +483,14 @@
   gap: 8rem;
 }
 
+.not-found-container-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .not-found-logo {
   height: 9.6rem;
   width: auto;
@@ -629,7 +637,7 @@
   }
 
   .not-found-page .heading-2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -644,6 +652,6 @@
   }
 
   .not-found-page .heading-2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }

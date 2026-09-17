@@ -350,6 +350,51 @@ function animateCounter(element) {
 
   element.textContent = `${prefix}${formatCounterNumber(0)}${suffix}`;
 
+  const isTwoPhase = element.dataset.counterType === "two-phase";
+
+  if (isTwoPhase && targetNumber > 15) {
+    const slowCount = 10;
+    const fastTarget = targetNumber - slowCount;
+    const fastDuration = 400;
+    let startTime = null;
+    let currentSlowNumber = fastTarget;
+
+    function fastPhase(currentTime) {
+      if (!startTime) startTime = currentTime;
+
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / fastDuration, 1);
+      const eased = 1 - Math.pow(1 - progress, 2);
+
+      const current = Math.floor(fastTarget * eased);
+      element.textContent = `${prefix}${formatCounterNumber(current)}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(fastPhase);
+      } else {
+        currentSlowNumber = fastTarget;
+        slowPhase();
+      }
+    }
+
+    function slowPhase() {
+      if (currentSlowNumber < targetNumber) {
+        currentSlowNumber++;
+        element.textContent = `${prefix}${formatCounterNumber(currentSlowNumber)}${suffix}`;
+
+        const remaining = targetNumber - currentSlowNumber;
+        const stepDelay = 40 + (slowCount - remaining) * 8;
+
+        setTimeout(slowPhase, stepDelay);
+      } else {
+        element.textContent = `${prefix}${formatCounterNumber(targetNumber)}${suffix}`;
+      }
+    }
+
+    requestAnimationFrame(fastPhase);
+    return;
+  }
+
   const duration = Number(element.dataset.counterDuration) || 1400;
 
   let startTime = null;
