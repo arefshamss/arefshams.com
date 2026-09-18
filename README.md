@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/img/logo/favicon.png" width="180" alt="Aref Shamspour Logo" />
+  <img src="/assets/img/logo/logo.png" height="120" alt="Aref Shamspour Logo" />
 </p>
 
 <h1 align="center">
