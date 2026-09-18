@@ -158,6 +158,64 @@
 }
 
 /* ============================================ */
+/* ICON ======================================= */
+/* ============================================ */
+
+.circle-icon {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-circle);
+  background-color: var(--color-secondary);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px 1px rgb(var(--color-white-rgb) / 0.05) inset;
+}
+
+.circle-icon--sm {
+  font-size: 2.8rem;
+}
+
+.circle-icon--md {
+  font-size: 3.6rem;
+}
+
+.circle-icon--lg {
+  font-size: 4.8rem;
+}
+
+.circle-icon .icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  color: var(--color-primary);
+}
+
+/* 1200px / 75em ===================== */
+@media (max-width: 75em) {
+  .circle-icon {
+    font-size: 3rem;
+  }
+}
+
+/* 880px / 55em ====================== */
+@media (max-width: 55em) {
+  .circle-icon {
+    font-size: 2.8rem;
+  }
+}
+
+/* 768px / 48em ====================== */
+@media (max-width: 48em) {
+  .circle-icon {
+    font-size: 2.6rem;
+  }
+}
+
+/* ============================================ */
 /* BUTTON ===================================== */
 /* ============================================ */
 
@@ -1222,8 +1280,4 @@ strong {
     font-size: 1rem;
     padding: 0.2rem 0.4rem;
   }
-}
-
-/* 432px / 27em ====================== */
-@media (max-width: 27em) {
 }
