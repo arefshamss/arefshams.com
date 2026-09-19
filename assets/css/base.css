@@ -70,6 +70,7 @@
   --border-radius-circle: 50%;
   --border-radius-badge: clamp(1rem, 5vw, 2rem);
   --border-radius-nav: clamp(1rem, 5vw, 2rem);
+  --border-radius-input: 2rem;
 
   /* TRANSITIONS ============================== */
 

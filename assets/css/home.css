@@ -1103,7 +1103,7 @@
   color: inherit;
   border: 2px solid var(--color-border);
   background-color: var(--color-secondary);
-  border-radius: var(--border-radius-main);
+  border-radius: var(--border-radius-input);
   box-shadow: 0 1px 2px rgb(var(--color-black-rgb) / 0.1);
   padding: 1rem;
   transition: all 0.5s ease;
@@ -1221,7 +1221,7 @@
     opacity 0.25s ease,
     visibility 0.25s ease;
   z-index: 20;
-  border-radius: var(--border-radius-main);
+  border-radius: var(--border-radius-input);
 }
 
 .contact-form-loader span {
