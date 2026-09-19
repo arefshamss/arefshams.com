@@ -848,11 +848,9 @@
   justify-content: space-between;
 }
 
-.project-icon {
-  font-size: 3.4rem;
-  border-radius: var(--border-radius-circle);
+.project-more-info .badge {
   filter: grayscale(50%);
-  opacity: 0.6;
+  opacity: 0.5;
   transition: all 0.5s ease;
 }
 
@@ -860,7 +858,7 @@
   transform: scale(1.02);
 }
 
-.project-card:hover .project-icon {
+.project-card:hover .project-more-info .badge {
   transform: scale(1.01);
   filter: none;
   opacity: 1;

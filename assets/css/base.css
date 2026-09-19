@@ -44,7 +44,7 @@
   --color-js: #ffca28;
   --color-css: #264de4;
   --color-php: #8993be;
-  --color-dotnet: #512bd4;
+  --color-dotnet: #4e2acd;
   --color-html: #e44d26;
   --color-tailwind: #44a8b3;
   --color-bootstrap: #563d7c;
@@ -65,9 +65,11 @@
 
   /* RADIUS =================================== */
 
-  --border-radius-main: 2rem;
+  --border-radius-main: clamp(2.6rem, 5vw, 3.6rem);
   --border-radius-max: 50rem;
   --border-radius-circle: 50%;
+  --border-radius-badge: clamp(1rem, 5vw, 2rem);
+  --border-radius-nav: clamp(1rem, 5vw, 2rem);
 
   /* TRANSITIONS ============================== */
 
