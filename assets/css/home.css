@@ -815,7 +815,7 @@
 .project-img {
   overflow: hidden;
   border: solid 1px var(--color-border);
-  border-radius: var(--border-radius-main);
+  border-radius: var(--border-radius-main) var(--border-radius-main) 0 0;
   position: relative;
 }
 

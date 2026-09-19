@@ -1,5 +1,3 @@
-
-
 /* ============================================ */
 /* PROJECT DETAILS ============================ */
 /* ============================================ */
@@ -56,78 +54,87 @@
   font-size: 1.6rem;
 }
 
-.project-details {
+.project-hero,
+.project-content {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
 }
 
-.project-details .project-img:hover img {
+.project-hero {
+  row-gap: 1rem;
+}
+
+.project-content {
+  row-gap: 3rem;
+}
+
+.project-hero .project-img:hover img {
   transform: scale(1.01);
 }
 
-.project-details-main-card,
-.project-details-card {
+.project-hero-card,
+.project-content-card {
   background-color: var(--color-secondary-dark);
-  border-radius: var(--border-radius-main);
   border: solid 1px var(--color-border);
   display: flex;
   flex-direction: column;
-  border: solid 1px var(--color-border);
   padding: 4rem;
 }
 
-.project-details-main-card {
+.project-hero-card {
+  border-radius: 0 0 var(--border-radius-main) var(--border-radius-main);
   row-gap: 4rem;
 }
 
-.project-details-card {
+.project-content-card {
+  border-radius: var(--border-radius-main);
   row-gap: 3rem;
   transition: all 0.6s;
 }
 
-.project-details-content {
+.project-content-body {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
 }
 
-.project-details-card:hover {
+.project-content-card:hover {
   box-shadow: 0 0 0 8px rgba(var(--color-secondary-rgb) / 0.6);
   transform: scale(1.01);
 }
 
-.project-details-header {
+.project-hero-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.project-details-header div {
+.project-hero-header div {
   display: flex;
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.project-details-list {
+.project-content-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.project-details-list li h3,
-.project-details-list li h4 {
+.project-content-list li h3,
+.project-content-list li h4 {
   margin-bottom: 1rem;
 }
 
-.project-details-list li p {
+.project-content-list li p {
   position: relative;
   padding-right: 2rem;
   margin-bottom: 1rem;
 }
 
-.project-details-list li p::before {
+.project-content-list li p::before {
   content: "";
   position: absolute;
   right: 0;
@@ -241,11 +248,11 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
 /* 1200px / 75em ===================== */
 @media (max-width: 75em) {
-  .project-details-card {
+  .project-content-card {
     row-gap: 2.8rem;
   }
 
-  .project-details-content {
+  .project-content-body {
     row-gap: 1.8rem;
   }
 
@@ -276,16 +283,16 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
 
 /* 880px / 55em ====================== */
 @media (max-width: 55em) {
-  .project-details-card {
+  .project-content-card {
     row-gap: 2.6rem;
   }
 
-  .project-details-content {
+  .project-content-body {
     row-gap: 1.6rem;
   }
 
-  .project-details-main-card,
-  .project-details-card {
+  .project-hero-card,
+  .project-content-card {
     padding: 3rem;
   }
 
@@ -328,16 +335,16 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     font-size: 2.4rem;
   }
 
-  .project-details-card {
+  .project-content-card {
     row-gap: 2.4rem;
   }
 
-  .project-details-content {
+  .project-content-body {
     row-gap: 1.4rem;
   }
 
-  .project-details-main-card,
-  .project-details-card {
+  .project-hero-card,
+  .project-content-card {
     padding: 2.5rem;
   }
 
@@ -352,21 +359,21 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     font-size: 2.2rem;
   }
 
-  .project-details-card {
+  .project-content-card {
     row-gap: 2.2rem;
   }
 
-  .project-details-content {
+  .project-content-body {
     row-gap: 1.2rem;
   }
 
-  .project-details-header {
+  .project-hero-header {
     flex-direction: column;
     align-items: start;
     gap: 3rem;
   }
 
-  .project-details-list li p {
+  .project-content-list li p {
     padding-right: 1.8rem;
     margin-bottom: 0.8rem;
   }
@@ -382,16 +389,16 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     margin: 0 0.5rem;
   }
 
-  .project-details-main-card,
-  .project-details-card {
+  .project-hero-card,
+  .project-content-card {
     padding: 2rem;
   }
 
-  .project-details-card {
+  .project-content-card {
     row-gap: 2rem;
   }
 
-  .project-details-content {
+  .project-content-body {
     row-gap: 1rem;
   }
 
@@ -426,7 +433,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     font-size: 1.5rem;
   }
 
-  .project-details-list li p {
+  .project-content-list li p {
     padding-right: 1.5rem;
     margin-bottom: 0.5rem;
   }

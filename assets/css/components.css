@@ -1,4 +1,39 @@
 /* ============================================ */
+/* TECH COLOR UTILITIES ======================= */
+/* ============================================ */
+
+.wordpress {
+  --tech-color: var(--color-wordpress);
+}
+.elementor {
+  --tech-color: var(--color-elementor);
+}
+.woocommerce {
+  --tech-color: var(--color-woocommerce);
+}
+.js {
+  --tech-color: var(--color-js);
+}
+.css {
+  --tech-color: var(--color-css);
+}
+.php {
+  --tech-color: var(--color-php);
+}
+.dotnet {
+  --tech-color: var(--color-dotnet);
+}
+.html {
+  --tech-color: var(--color-html);
+}
+.tailwind {
+  --tech-color: var(--color-tailwind);
+}
+.bootstrap {
+  --tech-color: var(--color-bootstrap);
+}
+
+/* ============================================ */
 /* GENERAL ==================================== */
 /* ============================================ */
 .section {
@@ -609,74 +644,37 @@ strong {
   flex-wrap: wrap;
 }
 
+.tag-item,
+.tag-icon {
+  transition: all 0.6s ease;
+  background-color: var(--pill-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 5px 1px rgb(var(--color-white-rgb) / 0.08) inset;
+}
+
 .tag-item {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  background-color: var(--pill-bg);
-  border: 1px solid var(--color-border);
   border-radius: var(--border-radius-max);
   color: var(--color-white);
   padding: 0 0 0 2rem;
   gap: 1.2rem;
-  transition: all 0.5s ease;
 }
 
 .tag-icon {
-  border: 1px solid var(--color-border);
   border-radius: var(--border-radius-circle);
-  background-color: var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  box-shadow: 0 0 5px 1px rgb(var(--color-white-rgb) / 0.08) inset;
 }
 
 .tag-icon .icon {
   font-size: 3.6rem;
-}
-
-.icon.wordpress {
-  color: var(--color-wordpress);
-}
-
-.icon.elementor {
-  color: var(--color-elementor);
-}
-.icon.woocommerce {
-  color: var(--color-woocommerce);
-}
-
-.icon.javascript {
-  color: var(--color-js);
-}
-
-.icon.css {
-  color: var(--color-css);
-}
-
-.icon.php {
-  color: var(--color-php);
-}
-
-.icon.dotnet {
-  color: var(--color-dotnet);
-}
-
-.icon.html {
-  color: var(--color-html);
-}
-
-.icon.tailwind {
-  color: var(--color-tailwind);
-}
-
-.icon.bootstrap {
-  color: var(--color-bootstrap);
+  color: var(--tech-color, inherit);
 }
 
 .tag-item span {
@@ -685,19 +683,18 @@ strong {
   color: var(--color-text-muted);
   font-size: 1.4rem;
   transform: translateY(1px);
+  transition: inherit;
 }
 
 .tag-item.flag span {
   transform: translateY(0);
 }
 
-.tag-item:hover {
-  box-shadow: 0 0 1px var(--color-text-muted);
-  background-color: rgb(var(--color-white-rgb) / 0.08);
-}
-
+.tag-item:hover,
 .tag-item:hover .tag-icon {
-  box-shadow: 0px 0px 2px var(--color-text-muted);
+  border-color: rgb(var(--color-primary-rgb) / 0.3);
+  background-color: var(--color-bg);
+  box-shadow: 0 0 12px 1px rgb(var(--color-primary-rgb) / 0.3) inset;
 }
 
 .tag-item:hover span {
@@ -760,11 +757,10 @@ strong {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  /* background-color: transparent; */
   background-color: var(--pill-bg);
   border: 1px solid var(--pill-border);
   border-radius: var(--border-radius-max);
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
   color: var(--color-white);
 }
 
@@ -780,11 +776,10 @@ strong {
 
 .social-pill:hover {
   border-color: var(--color-primary);
-  background-color: rgb(var(--color-white-rgb) / 0.08);
-  /* transform: translateY(-2px); */
+  background-color: rgb(var(--color-secondary-rgb) / 0.08);
 }
 
-.icon-circle {
+.pill-icon {
   background-color: transparent;
   border: 1px solid var(--circle-border);
   border-radius: var(--border-radius-circle);
@@ -792,22 +787,22 @@ strong {
   align-items: center;
   justify-content: center;
   font-size: 2.2rem;
-  transition: all 0.3s ease;
+  transition: inherit;
 }
 
-.social-pill-md .icon-circle {
+.social-pill-md .pill-icon {
   width: 3.8rem;
   height: 3.8rem;
   font-size: 2rem;
 }
 
-.social-pill-lg .icon-circle {
+.social-pill-lg .pill-icon {
   width: 5.2rem;
   height: 5.2rem;
   font-size: 2.4rem;
 }
 
-.social-pill:hover .icon-circle {
+.social-pill:hover .pill-icon {
   border-color: var(--color-primary);
   color: var(--color-primary);
   box-shadow: 0 0 10px rgb(var(--color-primary-rgb) / 0.3);
@@ -816,7 +811,12 @@ strong {
 .social-pill span {
   font-family: inherit;
   font-weight: 400;
+  transition: inherit;
   color: rgb(var(--color-white-rgb) / 0.8);
+}
+
+.social-pill:hover span {
+  color: var(--color-primary);
 }
 
 .social-pill-md span {
@@ -841,13 +841,13 @@ strong {
     gap: 1.4rem;
   }
 
-  .social-pill-md .icon-circle {
+  .social-pill-md .pill-icon {
     width: 3.6rem;
     height: 3.6rem;
     font-size: 1.9rem;
   }
 
-  .social-pill-lg .icon-circle {
+  .social-pill-lg .pill-icon {
     width: 5rem;
     height: 5rem;
     font-size: 2.2rem;
@@ -875,13 +875,13 @@ strong {
     padding: 0.2rem 0.2rem 0.2rem 2.3rem;
     gap: 1.3rem;
   }
-  .social-pill-md .icon-circle {
+  .social-pill-md .pill-icon {
     width: 3.4rem;
     height: 3.4rem;
     font-size: 1.8rem;
   }
 
-  .social-pill-lg .icon-circle {
+  .social-pill-lg .pill-icon {
     width: 4.8rem;
     height: 4.8rem;
     font-size: 2rem;
@@ -909,8 +909,8 @@ strong {
     gap: 1.2rem;
   }
 
-  .social-pill-md .icon-circle,
-  .social-pill-lg .icon-circle {
+  .social-pill-md .pill-icon,
+  .social-pill-lg .pill-icon {
     width: 4.6rem;
     height: 4.6rem;
     font-size: 1.8rem;
@@ -919,13 +919,13 @@ strong {
 
 /* 880px / 55em ====================== */
 @media (max-width: 55em) {
-  .social-pill-md .icon-circle {
+  .social-pill-md .pill-icon {
     width: 3.6rem;
     height: 3.6rem;
     font-size: 1.6rem;
   }
 
-  .social-pill-lg .icon-circle {
+  .social-pill-lg .pill-icon {
     width: 4.2rem;
     height: 4.2rem;
     font-size: 1.6rem;
@@ -944,13 +944,13 @@ strong {
     gap: 1rem;
   }
 
-  .social-pill-md .icon-circle {
+  .social-pill-md .pill-icon {
     width: 3.4rem;
     height: 3.4rem;
     font-size: 1.6rem;
   }
 
-  .social-pill-lg .icon-circle {
+  .social-pill-lg .pill-icon {
     width: 4rem;
     height: 4rem;
     font-size: 1.6rem;
@@ -967,13 +967,13 @@ strong {
 
 /* 432px / 27em ====================== */
 @media (max-width: 27em) {
-  .social-pill-md .icon-circle {
+  .social-pill-md .pill-icon {
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
   }
 
-  .social-pill-lg .icon-circle {
+  .social-pill-lg .pill-icon {
     width: 3.6rem;
     height: 3.6rem;
     font-size: 1.5rem;
@@ -1286,7 +1286,7 @@ strong {
   gap: 0.6rem;
   border: none;
   box-shadow: inset 0 0 16px -2px
-    color-mix(in srgb, var(--badge-dot) 35%, transparent);
+    color-mix(in srgb, var(--tech-color) 35%, transparent);
   color: var(--color-text);
   transition: all 0.6s ease;
   cursor: default;
@@ -1303,39 +1303,8 @@ strong {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: var(--border-radius-circle);
-  background-color: var(--badge-dot, var(--color-primary));
+  background-color: var(--tech-color, var(--color-primary));
   box-shadow: 0 0 5px
-    color-mix(in srgb, var(--badge-dot, var(--color-primary)) 70%, transparent);
+    color-mix(in srgb, var(--tech-color, var(--color-primary)) 70%, transparent);
   flex-shrink: 0;
-}
-
-.badge--wordpress {
-  --badge-dot: var(--color-wordpress);
-}
-.badge--elementor {
-  --badge-dot: var(--color-elementor);
-}
-.badge--woocommerce {
-  --badge-dot: var(--color-woocommerce);
-}
-.badge--js {
-  --badge-dot: var(--color-js);
-}
-.badge--css {
-  --badge-dot: var(--color-css);
-}
-.badge--php {
-  --badge-dot: var(--color-php);
-}
-.badge--dotnet {
-  --badge-dot: var(--color-dotnet);
-}
-.badge--html {
-  --badge-dot: var(--color-html);
-}
-.badge--tailwind {
-  --badge-dot: var(--color-tailwind);
-}
-.badge--bootstrap {
-  --badge-dot: var(--color-bootstrap);
 }
