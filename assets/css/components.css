@@ -193,7 +193,7 @@
 }
 
 /* ============================================ */
-/* ICON ======================================= */
+/* CIRCLE ICON ================================ */
 /* ============================================ */
 
 .circle-icon {
@@ -667,13 +667,16 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  padding: 1rem;
+  width: 1.4em;
+  height: 1.4em;
+  padding: 0.28em;
+  font-size: 3.6rem;
 }
 
 .tag-icon .icon {
-  font-size: 3.6rem;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
   color: var(--tech-color, inherit);
 }
 
@@ -704,11 +707,6 @@ strong {
 /* 1200px / 75em ===================== */
 @media (max-width: 75em) {
   .tag-icon {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-
-  .tag-icon .icon {
     font-size: 3.3rem;
   }
 }
@@ -718,12 +716,8 @@ strong {
   .tag-item span {
     font-size: 1.3rem;
   }
-  .tag-icon {
-    width: 4rem;
-    height: 4rem;
-  }
 
-  .tag-icon .icon {
+  .tag-icon {
     font-size: 3rem;
   }
 }
@@ -733,12 +727,8 @@ strong {
   .tag-item span {
     font-size: 1.2rem;
   }
-  .tag-icon {
-    width: 3.6rem;
-    height: 3.6rem;
-  }
 
-  .tag-icon .icon {
+  .tag-icon {
     font-size: 2.8rem;
   }
 }
