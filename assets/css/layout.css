@@ -20,6 +20,17 @@
   transition: transform 0.35s ease-in-out;
 }
 
+.header::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: rgb(var(--color-secondary-rgb));
+  pointer-events: none;
+}
+
 .header-container {
   width: 100%;
   max-width: 120rem;
