@@ -33,6 +33,19 @@
   --tech-color: var(--color-bootstrap);
 }
 
+.icon.wordpress,
+.icon.elementor,
+.icon.woocommerce,
+.icon.js,
+.icon.css,
+.icon.php,
+.icon.dotnet,
+.icon.html,
+.icon.tailwind,
+.icon.bootstrap {
+  color: var(--tech-color);
+}
+
 /* ============================================ */
 /* GENERAL ==================================== */
 /* ============================================ */

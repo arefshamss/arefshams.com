@@ -157,7 +157,7 @@
 
 .code-accordion {
   background: var(--color-secondary);
-  border-radius: var(--border-radius-main);
+  border-radius: var(--border-radius-secondary);
   overflow: hidden;
   border: 1px solid var(--color-border);
   transition: all 0.3s ease;
@@ -167,6 +167,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0 1rem;
 }
 
 .accordion-header .icon {
@@ -177,6 +178,7 @@
   font-size: 1.6rem;
   transition: all 0.3s ease;
 }
+
 .code-accordion:hover .accordion-header span {
   color: var(--color-primary);
 }
@@ -193,12 +195,16 @@
 }
 
 .code-accordion summary::after {
-  content: "+";
-  font-size: 1.8rem;
+  content: "❯";
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+  transform: rotate(270deg);
 }
 
 .code-accordion[open] summary::after {
-  content: "-";
+  transform: rotate(90deg);
 }
 
 .code-accordion pre {
@@ -206,7 +212,6 @@
   background: var(--color-secondary);
   border-top: 1px solid var(--color-border);
   overflow: auto;
-  border-radius: var(--border-radius-main);
   box-shadow: inset 1px 1px 0.5em #000;
   margin: 0;
   padding: 1.5rem;
