@@ -434,13 +434,16 @@
 
 .link:link,
 .link:visited {
-  color: var(--color-text);
+  display: inline-block;
   text-decoration: none;
   transition: all 0.5s ease;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
 }
 
 .link:hover,
 .link:active {
+  border-bottom: 1px solid transparent;
   color: var(--color-primary);
 }
 

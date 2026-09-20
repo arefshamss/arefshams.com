@@ -310,6 +310,7 @@
   width: auto;
 }
 
+.source-code,
 .copyright {
   font-size: 1.6rem;
   text-align: center;
@@ -326,6 +327,7 @@
     height: 5rem;
   }
 
+  .source-code,
   .copyright {
     font-size: 1.5rem;
   }
@@ -341,6 +343,7 @@
     height: 4.8rem;
   }
 
+  .source-code,
   .copyright {
     font-size: 1.4rem;
   }
@@ -359,6 +362,7 @@
     height: 4.4rem;
   }
 
+  .source-code,
   .copyright {
     font-size: 1.3rem;
   }
@@ -370,6 +374,7 @@
     height: 4.2rem;
   }
 
+  .source-code,
   .copyright {
     font-size: 1.2rem;
   }
