@@ -92,13 +92,22 @@ arefshams.com/
 │   │   └── projects.css
 │   ├── fonts/
 │   ├── img/
+│   │   ├── logo/
+│   │   ├── projects/
+│   │   ├── shapes/
+│   │   ├── tech-logo/
+│   │   └── user
 │   ├── js/
+│   │   └── script.js
 │   ├── libraries/
+│   │   └── prism/
 │   ├── pdf/
 │   └── snippets/
 │
 ├── robots.txt
-└── sitemap.xml
+├── sitemap.xml
+├── LICENSE
+└── package.json
 ```
 
 ## 🎨 CSS Architecture
