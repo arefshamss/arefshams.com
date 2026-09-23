@@ -553,6 +553,12 @@
   border: solid var(--color-border) 1px;
   padding: 2rem 0;
   border-radius: var(--border-radius-main);
+  color: var(--color-text-muted);
+  transition: all 0.5s ease;
+}
+
+.skill-card:hover {
+  color: var(--color-white);
 }
 
 .skill-card img {
@@ -571,12 +577,6 @@
 .skill-card span {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--color-text);
-  transition: color 0.25s ease;
-}
-
-.skill-card:hover span {
-  color: var(--color-white);
 }
 
 /* 1368px / 85.5em =================== */
@@ -1236,6 +1236,7 @@
   opacity: 0.6;
   pointer-events: none;
   user-select: none;
+  -webkit-user-select: none;
   transition:
     filter 0.25s ease,
     opacity 0.25s ease;

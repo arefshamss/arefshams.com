@@ -120,16 +120,15 @@
   align-items: center;
   justify-content: start;
   gap: 1rem;
+  color: var(--color-text-muted);
 }
 
 .divider h2 {
-  color: var(--color-text-muted);
   font-size: 2.4rem;
   margin: 0;
 }
 
 .divider span {
-  color: var(--color-text-muted);
   font-size: 1.5rem;
   margin: 0;
 }
@@ -282,6 +281,8 @@
   border-radius: var(--border-radius-max);
   cursor: pointer;
   transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .btn:hover,
@@ -363,7 +364,6 @@
   border-color: var(--color-grey);
   opacity: 0.5;
   cursor: not-allowed;
-  user-select: none;
 }
 
 .btn--disabled:hover,
@@ -432,24 +432,26 @@
 /* LINK ======================================= */
 /* ============================================ */
 
-.link:link,
-.link:visited {
-  display: inline-block;
+.link {
+  color: inherit;
   text-decoration: none;
   transition: all 0.5s ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--color-primary);
+}
+
+.link--underline {
+  display: inline-block;
   border-bottom: 1px solid currentColor;
   padding-bottom: 0.2rem;
 }
 
-.link:hover,
-.link:active {
-  border-bottom: 1px solid transparent;
-  color: var(--color-primary);
-}
-
-.link:hover :is([class^="heading-"]),
-.link:focus-visible :is([class^="heading-"]) {
-  color: var(--color-primary);
+.link--underline:hover,
+.link--underline:focus-visible {
+  border-bottom-color: transparent;
 }
 
 /* ============================================ */
@@ -469,6 +471,7 @@
   align-items: center;
   gap: 1rem;
   line-height: 1.2;
+  color: var(--color-text);
 }
 
 .list-item .icon {
@@ -478,7 +481,6 @@
 
 .list-item span {
   line-height: 2;
-  color: var(--color-text);
 }
 
 /* 1200px / 75em ===================== */
@@ -656,8 +658,9 @@ strong {
 .tag-container {
   display: flex;
   gap: 1rem;
-  user-select: none;
   flex-wrap: wrap;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .tag-item,
@@ -673,9 +676,9 @@ strong {
   align-items: center;
   text-decoration: none;
   border-radius: var(--border-radius-max);
-  color: var(--color-white);
   padding: 0 0 0 2rem;
   gap: 1.2rem;
+  color: var(--color-text-muted);
 }
 
 .tag-icon {
@@ -699,7 +702,6 @@ strong {
 .tag-item span {
   font-family: inherit;
   font-weight: 300;
-  color: var(--color-text-muted);
   font-size: 1.4rem;
   transform: translateY(1px);
   transition: inherit;
@@ -714,10 +716,7 @@ strong {
   border-color: rgb(var(--color-primary-rgb) / 0.3);
   background-color: var(--color-bg);
   box-shadow: 0 0 12px 1px rgb(var(--color-primary-rgb) / 0.3) inset;
-}
-
-.tag-item:hover span {
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 /* 1200px / 75em ===================== */
@@ -767,7 +766,9 @@ strong {
   border: 1px solid var(--pill-border);
   border-radius: var(--border-radius-max);
   transition: all 0.6s ease;
-  color: var(--color-white);
+  user-select: none;
+  -webkit-user-select: none;
+  color: rgb(var(--color-white-rgb) / 0.8);
 }
 
 .social-pill-md {
@@ -783,6 +784,7 @@ strong {
 .social-pill:hover {
   border-color: var(--color-primary);
   background-color: rgb(var(--color-secondary-rgb) / 0.08);
+  color: var(--color-primary);
 }
 
 .pill-icon {
@@ -794,6 +796,7 @@ strong {
   justify-content: center;
   font-size: 2.2rem;
   transition: inherit;
+  color: var(--color-white);
 }
 
 .social-pill-md .pill-icon {
@@ -818,11 +821,6 @@ strong {
   font-family: inherit;
   font-weight: 400;
   transition: inherit;
-  color: rgb(var(--color-white-rgb) / 0.8);
-}
-
-.social-pill:hover span {
-  color: var(--color-primary);
 }
 
 .social-pill-md span {
@@ -832,7 +830,6 @@ strong {
 .social-pill-lg span {
   font-size: 1.6rem;
   font-weight: 500;
-  color: rgb(var(--color-white-rgb) / 0.9);
 }
 
 /* 1368px / 85.5em =================== */
@@ -1262,6 +1259,9 @@ strong {
   color: var(--color-primary);
   background-color: rgb(var(--color-primary-rgb) / 0.05);
   border: 1px solid rgb(var(--color-primary-rgb) / 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
 }
 
 /* 1200px / 75em ===================== */
@@ -1295,8 +1295,6 @@ strong {
     color-mix(in srgb, var(--tech-color) 35%, transparent);
   color: var(--color-text);
   transition: all 0.6s ease;
-  cursor: default;
-  user-select: none;
 }
 
 .badge--project .badge-text {

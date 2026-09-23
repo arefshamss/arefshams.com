@@ -179,7 +179,7 @@
   transition: all 0.3s ease;
 }
 
-.code-accordion:hover .accordion-header span {
+.code-accordion:hover .accordion-header {
   color: var(--color-primary);
 }
 
