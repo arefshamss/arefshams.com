@@ -286,7 +286,8 @@
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:focus-visible {
   border-color: var(--color-primary);
   transform: scale(1.02);
   box-shadow: 0 0 0 5px rgb(var(--color-primary-rgb) / 0.2);
@@ -320,7 +321,8 @@
 }
 
 .btn--full:hover,
-.btn--full:active {
+.btn--full:active,
+.btn--full:focus-visible {
   background-color: var(--color-primary-light);
 }
 
@@ -350,8 +352,10 @@
 
 .btn--outline-primary:hover,
 .btn--outline-primary:active,
+.btn--outline-primary:focus-visible,
 .btn--outline-muted:hover,
-.btn--outline-muted:active {
+.btn--outline-muted:active,
+.btn--outline-muted:focus-visible {
   background-color: var(--color-primary);
   color: var(--color-secondary-dark);
 }
@@ -367,7 +371,8 @@
 }
 
 .btn--disabled:hover,
-.btn--disabled:active {
+.btn--disabled:active,
+.btn--disabled:focus-visible {
   background-color: transparent;
   color: var(--color-grey);
   border-color: var(--color-grey);
@@ -559,7 +564,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-.breadcrumb a:hover {
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
   color: var(--color-primary);
 }
 
@@ -711,7 +717,9 @@ strong {
 }
 
 .tag-item:hover,
-.tag-item:hover .tag-icon {
+.tag-item:hover .tag-icon,
+.tag-item:focus-visible,
+.tag-item:focus-visible .tag-icon {
   border-color: rgb(var(--color-primary-rgb) / 0.3);
   background-color: var(--color-bg);
   box-shadow: 0 0 12px 1px rgb(var(--color-primary-rgb) / 0.3) inset;
@@ -780,7 +788,8 @@ strong {
   gap: 1.5rem;
 }
 
-.social-pill:hover {
+.social-pill:hover,
+.social-pill:focus-visible {
   border-color: var(--color-primary);
   background-color: rgb(var(--color-secondary-rgb) / 0.08);
   color: var(--color-primary);
@@ -810,7 +819,8 @@ strong {
   font-size: 2.4rem;
 }
 
-.social-pill:hover .pill-icon {
+.social-pill:hover .pill-icon,
+.social-pill:focus-visible .pill-icon {
   border-color: var(--color-primary);
   color: var(--color-primary);
   box-shadow: 0 0 10px rgb(var(--color-primary-rgb) / 0.3);
@@ -1035,12 +1045,14 @@ strong {
   transition: all 0.3s ease;
 }
 
-.social-link:hover::before {
+.social-link:hover::before,
+.social-link:focus-visible::before {
   width: 100%;
   height: 100%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus-visible {
   box-shadow: 0 8px 20px rgb(var(--color-black-rgb) / 0.6);
   border-color: rgb(var(--color-primary-rgb) / 0.4);
 }
@@ -1054,7 +1066,8 @@ strong {
     fill 0.3s ease;
 }
 
-.social-link:hover .icon {
+.social-link:hover .icon,
+.social-link:focus-visible .icon {
   color: var(--color-primary) !important;
   fill: var(--color-primary) !important;
   transform: scale(1.18);
@@ -1232,7 +1245,8 @@ strong {
     translate 0.2s ease;
 }
 
-.tooltip:hover::after {
+.tooltip:hover::after,
+.tooltip:focus-visible::after {
   opacity: 1;
   visibility: visible;
   translate: -50% -0.4rem;

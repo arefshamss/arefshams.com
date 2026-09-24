@@ -141,7 +141,8 @@
   opacity: 0.5;
   transition: all 0.5s ease;
 }
-.not-found-logo:hover {
+.not-found-logo:hover,
+.not-found-logo:focus-visible {
   opacity: 1;
 }
 

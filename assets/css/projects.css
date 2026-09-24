@@ -179,7 +179,8 @@
   transition: all 0.3s ease;
 }
 
-.code-accordion:hover .accordion-header {
+.code-accordion > summary:hover .accordion-header,
+.code-accordion > summary:focus-visible .accordion-header {
   color: var(--color-primary);
 }
 
@@ -230,7 +231,8 @@
   border-radius: 0.4rem;
 }
 
-.code-accordion pre::-webkit-scrollbar-thumb:hover {
+.code-accordion pre::-webkit-scrollbar-thumb:hover,
+.code-accordion pre::-webkit-scrollbar-thumb:focus-visible {
   background: var(--color-primary);
 }
 
@@ -247,7 +249,9 @@ div.code-toolbar > .toolbar > .toolbar-item > span {
 
 div.code-toolbar > .toolbar > .toolbar-item > a:hover,
 div.code-toolbar > .toolbar > .toolbar-item > button:hover,
-div.code-toolbar > .toolbar > .toolbar-item > span:hover {
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus-visible,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus-visible {
   color: var(--color-primary);
 }
 

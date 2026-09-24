@@ -215,8 +215,7 @@ a {
 }
 
 a:visited,
-a:active,
-a:focus {
+a:active {
   color: inherit;
   outline: none;
 }
@@ -246,11 +245,13 @@ button {
 
 /* FOCUS ====================================== */
 
-*:focus,
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 *:focus-visible {
-  outline: none !important;
-  box-shadow: none;
-  -webkit-tap-highlight-color: transparent;
+  outline: 1px solid var(--color-primary);
+  outline-offset: 3px;
 }
 
 /* SELECTION ================================== */

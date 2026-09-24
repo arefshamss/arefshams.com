@@ -145,7 +145,8 @@
   border: 1px solid transparent;
 }
 
-.main-nav-link:hover {
+.main-nav-link:hover,
+.main-nav-link:focus-visible {
   color: var(--color-primary);
   background-color: rgb(var(--color-primary-rgb) / 0.05);
   border: 1px solid rgb(var(--color-primary-rgb) / 0.1);
@@ -449,8 +450,10 @@
 }
 
 .scroll-to-top:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 4px;
+  color: var(--color-black);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-0.25rem) scale(1.05);
 }
 
 /* 680px / 42.5em ==================== */
