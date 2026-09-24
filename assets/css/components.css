@@ -280,7 +280,7 @@
   border: 1px solid transparent;
   border-radius: var(--border-radius-max);
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -316,7 +316,7 @@
 .btn--full:link,
 .btn--full:visited {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-secondary-dark);
 }
 
 .btn--full:hover,
@@ -353,7 +353,7 @@
 .btn--outline-muted:hover,
 .btn--outline-muted:active {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-secondary-dark);
 }
 
 .btn--disabled,
@@ -664,7 +664,7 @@ strong {
 
 .tag-item,
 .tag-icon {
-  transition: all 0.6s ease;
+  transition: all 0.5s ease;
   background-color: var(--pill-bg);
   border: 1px solid var(--color-border);
   box-shadow: 0 0 5px 1px rgb(var(--color-white-rgb) / 0.08) inset;
