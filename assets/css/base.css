@@ -72,6 +72,13 @@
   --border-radius-badge: clamp(1rem, 5vw, 2rem);
   --border-radius-nav: clamp(1rem, 5vw, 2rem);
 
+  /* FOCUS ==================================== */
+
+  --focus-color: var(--color-primary);
+  --focus-width: 1px;
+  --focus-offset: 0.5rem;
+  --focus-radius: 0.5rem;
+
   /* TRANSITIONS ============================== */
 
   --transition-default: all 0.3s ease;
@@ -250,8 +257,9 @@ button {
 }
 
 *:focus-visible {
-  outline: 1px solid var(--color-primary);
-  outline-offset: 3px;
+  outline: var(--focus-width) solid var(--focus-color);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--focus-radius);
 }
 
 /* SELECTION ================================== */

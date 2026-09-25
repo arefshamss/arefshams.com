@@ -179,9 +179,18 @@
   transition: all 0.3s ease;
 }
 
-.code-accordion > summary:hover .accordion-header,
-.code-accordion > summary:focus-visible .accordion-header {
+.code-accordion > summary:hover .accordion-header {
   color: var(--color-primary);
+}
+
+.code-accordion > summary:focus-visible {
+  outline: none;
+}
+
+.code-accordion > summary:focus-visible .accordion-header {
+  outline: var(--focus-width) solid var(--focus-color);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--focus-radius);
 }
 
 .code-accordion summary {

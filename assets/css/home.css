@@ -1158,7 +1158,7 @@
 
 .contact-form *:focus {
   outline: none;
-  box-shadow: 0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.7);
+  box-shadow: 0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.9);
   transform: scale(1.01);
 }
 
@@ -1195,11 +1195,11 @@
   transform: scale(1.01);
 
   -webkit-box-shadow:
-    0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.7),
+    0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.9),
     0 0 0 1000px var(--color-secondary) inset;
 
   box-shadow:
-    0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.7),
+    0 0 0 6px rgb(var(--color-secondary-lighter-rgb) / 0.9),
     0 0 0 1000px var(--color-secondary) inset;
 }
 
