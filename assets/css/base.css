@@ -224,7 +224,6 @@ a {
 a:visited,
 a:active {
   color: inherit;
-  outline: none;
 }
 
 /* LISTS ====================================== */
