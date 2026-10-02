@@ -684,3 +684,37 @@ if (scrollToTop) {
     lenis.scrollTo(0);
   });
 }
+
+///////////////////////////////////////////////////////////
+// Tooltip
+
+["mouseover", "touchstart", "focusin"].forEach((eventName) => {
+  document.addEventListener(
+    eventName,
+    (e) => {
+      const target = e.target.closest(".tooltip");
+      if (!target) return;
+
+      const rect = target.getBoundingClientRect();
+      const screenWidth = window.innerWidth;
+      const center = rect.left + rect.width / 2;
+
+      const threshold = 140;
+
+      if (center > screenWidth - threshold) {
+        target.style.setProperty("--tooltip-align-left", "auto");
+        target.style.setProperty("--tooltip-align-right", "0");
+        target.style.setProperty("--tooltip-translate-x", "0");
+      } else if (center < threshold) {
+        target.style.setProperty("--tooltip-align-left", "0");
+        target.style.setProperty("--tooltip-align-right", "auto");
+        target.style.setProperty("--tooltip-translate-x", "0");
+      } else {
+        target.style.setProperty("--tooltip-align-left", "50%");
+        target.style.setProperty("--tooltip-align-right", "auto");
+        target.style.setProperty("--tooltip-translate-x", "-50%");
+      }
+    },
+    { passive: true },
+  );
+});

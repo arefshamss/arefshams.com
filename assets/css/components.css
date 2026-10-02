@@ -1217,17 +1217,23 @@ strong {
 
 .tooltip {
   position: relative;
+  --tooltip-align-left: 50%;
+  --tooltip-align-right: auto;
+  --tooltip-translate-x: -50%;
 }
 
 .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
   top: calc(100% + 1rem);
-  left: 50%;
-  translate: -50% 0;
+
+  left: var(--tooltip-align-left);
+  right: var(--tooltip-align-right);
+  translate: var(--tooltip-translate-x) 0;
 
   width: max-content;
-  max-width: min(30rem, calc(100vw - 3rem));
+  max-width: min(28rem, calc(100vw - 2rem));
+  white-space: normal;
   padding: 0.8rem 1.2rem;
   border-radius: var(--border-radius-main);
   background-color: var(--color-text);
@@ -1236,6 +1242,7 @@ strong {
   font-size: 1.3rem;
   line-height: 1.5;
   text-align: center;
+  z-index: 100;
 
   opacity: 0;
   visibility: hidden;
@@ -1249,7 +1256,7 @@ strong {
 .tooltip:focus-visible::after {
   opacity: 1;
   visibility: visible;
-  translate: -50% -0.4rem;
+  translate: var(--tooltip-translate-x) -0.4rem;
 }
 
 /* ============================================ */
