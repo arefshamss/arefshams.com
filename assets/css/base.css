@@ -221,11 +221,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-a:visited,
-a:active {
-  color: inherit;
-}
-
 /* LISTS ====================================== */
 
 ul,
