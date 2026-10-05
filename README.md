@@ -159,7 +159,7 @@ Each project has its own page with relevant information, visuals, and implementa
 ## 🔍 SEO & Performance
 
 <p>
-  <img src="assets/img/other/lighthouse-score.webp" alt="Lighthouse 100 Score" width="850" style="border-radius: 20px;" />
+  <img src="assets/img/other/lighthouse-score.webp" alt="Lighthouse 100 Score" width="850" />
 </p>
 
 The website includes a number of technical foundations for search visibility and performance:
