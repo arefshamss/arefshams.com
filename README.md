@@ -96,7 +96,8 @@ arefshams.com/
 │   │   ├── projects/
 │   │   ├── shapes/
 │   │   ├── tech-logo/
-│   │   └── user
+│   │   ├── user/
+│   │   └── other/
 │   ├── js/
 │   │   └── script.js
 │   ├── libraries/
@@ -156,6 +157,10 @@ The portfolio currently presents several web projects and case studies, includin
 Each project has its own page with relevant information, visuals, and implementation details.
 
 ## 🔍 SEO & Performance
+
+<p>
+  <img src="assets/img/other/lighthouse-score.webp" alt="Lighthouse 100 Score" width="850" style="border-radius: 20px;" />
+</p>
 
 The website includes a number of technical foundations for search visibility and performance:
 
